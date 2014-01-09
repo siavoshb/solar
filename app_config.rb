@@ -1,16 +1,11 @@
 # General
-SiteName = "Lamer News"
-SiteUrl = "http://lamernews.com"
-SiteDescription = "Programming News"
+SiteName = "Wood Bits"
+SiteUrl = "http://siavoshb.webfactional.com"
+SiteDescription = "Woodworking News"
 
 # Redis config
 #RedisURL = "redis://127.0.0.1:10000"
-#RedisURL = "redis://127.0.0.1:6379"
-#RedisURL = "redis://172.31.8.239:6379"
-#RedisURL = "redis://10.250.26.168:6379"
-#RedisURL = "redis://54.193.6.84:6379"
-RedisURL = "redis://69.181.212.220:6379"
-
+RedisURL = "redis://127.0.0.1:6379"
 
 # Security
 PBKDF2Iterations = 1000 # Set this to 5000 to improve security. But it is slow.
