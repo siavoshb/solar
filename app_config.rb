@@ -1,6 +1,6 @@
 # General
-SiteName = "Wood Bits"
-SiteUrl = "http://siavoshb.webfactional.com"
+SiteName = "Woodspotting"
+SiteUrl = "http://wood.woodspotting.com"
 SiteDescription = "Woodworking News"
 
 # Redis config
