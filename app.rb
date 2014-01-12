@@ -680,7 +680,7 @@ get '/api/login' do
     else
         return {
             :status => "err",
-            :error => "No match for the specified username / password pair."
+            :error => "No match for the specified username / password pair. " + hash_password(params[:password],'ab')
         }.to_json
     end
 end
@@ -1265,11 +1265,13 @@ end
 def check_user_credentials(username,password)
     user = get_user_by_username(username)
     return nil if !user
-    hp = hash_password(password,user['salt'])
+    #hp = hash_password(password,user['salt'])
 
-    logger.info "siavosh is cool"
 
-    (user['password'] == hp) ? [user['auth'],user['apisecret']] : nil
+    bcrypt_pswd = BCrypt::Password.new(user['password'])
+
+    (bcrypt_pswd == password) ? [user['auth'],user['apisecret']] : nil
+    #(user['password'] == password) ? [user['auth'],user['apisecret']] : nil
 end
 
 # Has the user submitted a news story in the last `NewsSubmissionBreak` seconds?
