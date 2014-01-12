@@ -35,7 +35,7 @@ require 'json'
 require 'digest/sha1'
 require 'digest/md5'
 require_relative 'comments'
-#require_relative 'pbkdf2'
+require_relative 'pbkdf2'
 require_relative 'mail'
 require_relative 'about'
 require 'openssl' if UseOpenSSL
