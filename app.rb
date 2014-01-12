@@ -35,7 +35,7 @@ require 'json'
 require 'digest/sha1'
 require 'digest/md5'
 require_relative 'comments'
-require_relative 'pbkdf2'
+#require_relative 'pbkdf2'
 require_relative 'mail'
 require_relative 'about'
 require 'openssl' if UseOpenSSL
@@ -680,7 +680,7 @@ get '/api/login' do
     else
         return {
             :status => "err",
-            :error => "No match for the specified username / password pair."
+            :error => "No match for the specified username / password pair. " + BCrypt::Password.create(password)
         }.to_json
     end
 end
@@ -743,7 +743,7 @@ post '/api/create_account' do
     if params[:password].length < PasswordMinLength
         return {
             :status => "err",
-            :error => "Password is too short. Min length: #{PasswordMinLength}"
+            :error => "Password is too short. Min length: #{PasswordMinLength} " + BCrypt::Password.create(params[:password])
         }.to_json
     end
     auth,errmsg = create_user(params[:username],params[:password])
@@ -1237,15 +1237,15 @@ end
 # Turn the password into an hashed one, using PBKDF2 with HMAC-SHA1
 # and 160 bit output.
 def hash_password(password,salt)
-    p = PBKDF2.new do |p|
-        p.iterations = PBKDF2Iterations
-        p.password = password
-        p.salt = salt
-        p.key_length = 160/8
-    end
-    p.hex_string
+    #p = PBKDF2.new do |p|
+    #    p.iterations = PBKDF2Iterations
+    #    p.password = password
+    #    p.salt = salt
+    #    p.key_length = 160/8
+    #end
+    #p.hex_string
     
-    #BCrypt::Password.create(password)
+    BCrypt::Password.create(password)
 end
 
 # Return the user from the ID.
