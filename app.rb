@@ -680,7 +680,7 @@ get '/api/login' do
     else
         return {
             :status => "err",
-            :error => "No match for the specified username / password pair. " + BCrypt::Password.create(password)
+            :error => "No match for the specified username / password pair."
         }.to_json
     end
 end
@@ -743,7 +743,7 @@ post '/api/create_account' do
     if params[:password].length < PasswordMinLength
         return {
             :status => "err",
-            :error => "Password is too short. Min length: #{PasswordMinLength} " + BCrypt::Password.create(params[:password])
+            :error => "Password is too short. Min length: #{PasswordMinLength}"
         }.to_json
     end
     auth,errmsg = create_user(params[:username],params[:password])
@@ -1266,6 +1266,9 @@ def check_user_credentials(username,password)
     user = get_user_by_username(username)
     return nil if !user
     hp = hash_password(password,user['salt'])
+
+    logger.info "siavosh is cool"
+
     (user['password'] == hp) ? [user['auth'],user['apisecret']] : nil
 end
 
