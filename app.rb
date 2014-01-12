@@ -317,7 +317,7 @@ get '/submit' do
                 H.inputtext(:id => "title", :name => "title", :size => 80, :value => (params[:t] ? H.entities(params[:t]) : ""))+H.br+
                 H.label(:for => "url") {"url"}+H.br+
                 H.inputtext(:id => "url", :name => "url", :size => 60, :value => (params[:u] ? H.entities(params[:u]) : ""))+H.br+
-                "or if you don't have an url type some text"+
+                "or if you don't have a url, type some text"+
                 H.br+
                 H.label(:for => "text") {"text"}+
                 H.textarea(:id => "text", :name => "text", :cols => 60, :rows => 10) {}+
@@ -1237,15 +1237,15 @@ end
 # Turn the password into an hashed one, using PBKDF2 with HMAC-SHA1
 # and 160 bit output.
 def hash_password(password,salt)
-    #p = PBKDF2.new do |p|
-    #    p.iterations = PBKDF2Iterations
-    #    p.password = password
-    #    p.salt = salt
-    #    p.key_length = 160/8
-    #end
-    #p.hex_string
-    #include BCrypt
-    BCrypt::Password.create(password)
+    p = PBKDF2.new do |p|
+        p.iterations = PBKDF2Iterations
+        p.password = password
+        p.salt = salt
+        p.key_length = 160/8
+    end
+    p.hex_string
+    
+    #BCrypt::Password.create(password)
 end
 
 # Return the user from the ID.

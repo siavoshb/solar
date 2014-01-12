@@ -10,7 +10,7 @@ RedisURL = "redis://127.0.0.1:6379"
 # Security
 PBKDF2Iterations = 1000 # Set this to 5000 to improve security. But it is slow.
 UseOpenSSL = false
-PasswordMinLength = 8
+PasswordMinLength = 6
 
 # Comments
 CommentMaxLength = 4096
