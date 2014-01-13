@@ -230,7 +230,9 @@ end
 # Main -----------------------
 setup_redis
 UPLOAD_INDEX_KEY = "upload_index"
-filename = ARGV.first
+
+#filename = ARGV.first
+filename = "news.txt"
 newnews = File.open(filename)
 
 NUM_USERS = 10
