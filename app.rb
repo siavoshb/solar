@@ -680,7 +680,7 @@ get '/api/login' do
     else
         return {
             :status => "err",
-            :error => "No match for the specified username / password pair. " + hash_password(params[:password],'ab')
+            :error => "No match for the specified username / password pair."
         }.to_json
     end
 end
@@ -1265,8 +1265,6 @@ end
 def check_user_credentials(username,password)
     user = get_user_by_username(username)
     return nil if !user
-    #hp = hash_password(password,user['salt'])
-
 
     bcrypt_pswd = BCrypt::Password.new(user['password'])
 
@@ -1523,7 +1521,7 @@ def insert_news(title,url,text,user_id)
         url = "text://"+text[0...CommentMaxLength]
     end
     # Check for already posted news with the same URL.
-    if !textpost and (id = $r.get("url:"+url))
+    if !textpost and (id = ge$r.t("url:"+url))
         return id.to_i
     end
     # We can finally insert the news.
