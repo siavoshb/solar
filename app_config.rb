@@ -1,6 +1,6 @@
 # General
 SiteName = "Woodspotting"
-SiteUrl = "http://wood.woodspotting.com"
+SiteUrl = "http://woodspotting.com"
 SiteDescription = "Woodworking News"
 
 # Redis config
