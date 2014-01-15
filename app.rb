@@ -1650,7 +1650,8 @@ end
 # a linked title with buttons to up/down vote plus additional info.
 # This function expects as input a news entry as obtained from
 # the get_news_by_id function.
-def news_to_html(news)
+def news_to_html(news,order_num=0)
+
     return H.article(:class => "deleted") {
         "[deleted news]"
     } if news["del"]
@@ -1666,13 +1667,14 @@ def news_to_html(news)
         downclass << " voted"
         upclass << " disabled"
     end
+
     H.article("data-news-id" => news["id"]) {
         H.a(:href => "#up", :class => upclass) {
             "&#9650;"
         }+" "+
         H.h2 {
             H.a(:href=>news["url"], :rel => "nofollow") {
-                H.entities news["title"]
+                H.entities (order_num>0 ? order_num.to_s+". " : "") + news["title"]
             }
         }+" "+
         H.address {
@@ -1733,10 +1735,12 @@ end
 # the Redis hash representing the news in the DB) this function will render
 # the HTML needed to show this news.
 def news_list_to_html(news)
+    order_num=1
     H.section(:id => "newslist") {
         aux = ""
         news.each{|n|
-            aux << news_to_html(n)
+            aux << news_to_html(n,order_num)
+            order_num = order_num + 1
         }
         aux
     }
@@ -1763,7 +1767,7 @@ end
 # Generate the main page of the web site, the one where news are ordered by
 # rank.
 # 
-# As a side effect thsi function take care of checking if the rank stored
+# As a side effect this function take care of checking if the rank stored
 # in the DB is no longer correct (as time is passing) and updates it if
 # needed.
 #
