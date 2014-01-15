@@ -231,13 +231,11 @@ end
 setup_redis
 UPLOAD_INDEX_KEY = "upload_index"
 
-#filename = ARGV.first
-filename = "/home/siavoshb/webapps/passenger_app/solar/news.txt"
+filename = ARGV.first
+#filename = "/home/siavoshb/webapps/passenger_app/solar/news.txt"
 newnews = File.open(filename)
 
-NUM_USERS = 10
-#line_num = 0
-#user_counter = 1
+NUM_USERS = 5
 
 newnews.each_line do |line|
     current_db_index = $r.get(UPLOAD_INDEX_KEY).to_i
@@ -257,26 +255,12 @@ newnews.each_line do |line|
 
         insert_news(ntitle, nurl,"",user_id)
 
-#        user_counter = user_counter + 1
         current_db_index = current_db_index + 1
         $r.set(UPLOAD_INDEX_KEY, current_db_index.to_s)
 
-
-#          print "   title: #{}\n"
-#          print "   url: #{parts.at(1).strip!}\n"
-#          print "   user id: #{user_id}\n"
+	print "News auto uploader current idx: " + nid.to_s
+	print "News auto uploader: " + ntitle
 
         break
     end
 end
-
-
-=begin
-print insert_news("test 2", "http://www.nytimes.com","",1)
-print insert_news("test 3", "http://www.google.com","",1)
-print insert_news("test 4", "http://www.lycos.com","",1)
-print insert_news("test 5", "http://www.twitter.com","",1)
-print insert_news("test 6", "http://www.facebook.com","",1)
-print insert_news("test 7", "http://www.coinbase.com","",1)
-print insert_news("test 8", "http://www.reuters.com","",1)
-=end
