@@ -1041,7 +1041,8 @@ def application_header
     navitems = [    ["top","/"],
                     ["latest","/latest/0"],
                     ["random","/random"],                    
-                    ["submit","/submit"]]
+                    ["submit","/submit"],
+                    ["about", "/about"]]
     navbar = H.nav {
         navitems.map{|ni|
             H.a(:href=>ni[1]) {H.entities ni[0]}
