@@ -42,6 +42,8 @@ require 'openssl' if UseOpenSSL
 require 'uri'
 require 'bcrypt'
 
+enable :logging
+
 Version = "0.11.0"
 def setup_redis(uri=RedisURL)
     uri = URI.parse(uri)
@@ -763,6 +765,8 @@ post '/api/submit' do
     if not check_api_secret
         return {:status => "err", :error => "Wrong form secret."}.to_json
     end
+
+    logger.info "submitting - siavosh - news report"
 
     # We can have an empty url or an empty first comment, but not both.
     if (!check_params "title","news_id",:url,:text) or
@@ -1520,10 +1524,11 @@ def insert_news(title,url,text,user_id)
     if url.length == 0
         url = "text://"+text[0...CommentMaxLength]
     end
-    # Check for already posted news with the same URL.
-    if !textpost and (id = ge$r.t("url:"+url))
+    # Check for already posted news with the same URL. 
+    if !textpost and (id = $r.get("url:"+url))
         return id.to_i
     end
+
     # We can finally insert the news.
     ctime = Time.new.to_i
     news_id = $r.incr("news.count")
