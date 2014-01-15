@@ -244,9 +244,6 @@ newnews.each_line do |line|
 
     nid = parts.at(0).strip.to_i
 
-    puts current_db_index
-    puts nid
-
     if current_db_index == nid
 
         ntitle = parts.at(1).strip
@@ -258,8 +255,7 @@ newnews.each_line do |line|
         current_db_index = current_db_index + 1
         $r.set(UPLOAD_INDEX_KEY, current_db_index.to_s)
 
-	print "News auto uploader current idx: " + nid.to_s
-	print "News auto uploader: " + ntitle
+        puts "News auto uploader current idx: " + nid.to_s + ") " + ntitle
 
         break
     end
