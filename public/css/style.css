@@ -24,7 +24,7 @@ header {
     display:block;
     position:relative;
     padding: 15px 0px 0px 15px;
-    background-color:#eee;
+    background-color:#FF9900;
     border-bottom: 1px #ccc solid;
 }
 
@@ -45,9 +45,9 @@ header h1 small {
 
 #content {
     display:block;
-    margin-top:20px;
-    margin-bottom:20px;
+    margin:30px;
     padding: 15px;
+/*    background-color:#F2EFE1;*/
 }
 
 footer {
@@ -66,6 +66,7 @@ nav {
 
 nav a {
     margin-left: 20px;
+    color: white;
 }
 
 #account {

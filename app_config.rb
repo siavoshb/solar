@@ -41,14 +41,14 @@ UsernameRegexp = /^[a-zA-Z][a-zA-Z0-9_\-]+$/
 
 # News and ranking
 NewsAgePadding = 3600*8
-TopNewsPerPage = 30
-LatestNewsPerPage = 100
+TopNewsPerPage = 20
+LatestNewsPerPage = 20
 NewsEditTime = 60*15
 NewsScoreLogStart = 10
 NewsScoreLogBooster = 2
 RankAgingFactor = 1.1
 PreventRepostTime = 3600*48
-NewsSubmissionBreak = 60*15
+NewsSubmissionBreak = 60*5
 SavedNewsPerPage = 10
 TopNewsAgeLimit = 3600*24*30
 

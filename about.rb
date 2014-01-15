@@ -3,10 +3,12 @@ get '/about' do
     H.page {
         H.div(:id => "about") {
             H.h2 {"#{SiteName}"}+
-            H.p {"Lamer news is an implementation of a Reddit / Hacker News style news web site written using Ruby, Sinatra, Redis and jQuery."}+
-            H.p {"The goal is to have a system that is very simple to understand and modify and that is able to handle a very high load using a small virtual server, ensuring at the same time a very low latency user experience."}+
-            H.p {"This project was created in order to run " + H.a(:href => "http://lamernews.com/") {"Lamer News"} + " but is free for everybody to use, fork, and have fun with."}+
-            H.p {"We believe it is also a good programming example for Redis as a sole DB of a nontrivial, real world, web application."}
+            H.p {"<br>"}+
+            H.p {"Woodspotting is an implementation of a Reddit / Hacker News style news web site. As I've gotten more and more interested in woodworking, particularly, with hand tools, I've discovered an amazing amount of content online. Much of them in blogs written by other hobbysts, but I could never find an easy and convenient way to keep up with all the great content. My hope is a community can develop here where user submitted links and discussions can foster greater attention to all the great bloggers and woodworkers who sometimes wonder if their effort inspires others. Happy reading!"}+
+            H.p {"<br>"}+
+            H.p {"-Siavosh (siavoshb [at] yahoo"}+
+            H.p {"<br>"}+
+            H.p {"The code (with some minor changes) is from the generous open source project lamernews authored by antirez: https://github.com/antirez/lamernews"}
         }
     }
 end

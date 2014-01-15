@@ -44,7 +44,6 @@ require 'bcrypt'
 
 enable :logging
 
-Version = "0.11.0"
 def setup_redis(uri=RedisURL)
     uri = URI.parse(uri)
     $r = Redis.new(:host => uri.host, :port => uri.port, :password => uri.password) unless $r
@@ -1064,8 +1063,7 @@ def application_header
     menu_mobile = H.a(:href => "#", :id => "link-menu-mobile"){"<~>"}
     H.header {
         H.h1 {
-            H.a(:href => "/") {H.entities SiteName}+" "+
-            H.small {Version}
+            H.a(:href => "/") {H.entities SiteName}
         }+navbar+" "+rnavbar+" "+menu_mobile
     }
 end
@@ -1113,11 +1111,7 @@ def application_footer
     end
     H.footer {
         links = [
-            ["about", "/about"],
-            ["source code", "http://github.com/antirez/lamernews"],
-            ["rss feed", "/rss"],
-            ["twitter", FooterTwitterLink],
-            ["google group", FooterGoogleGroupLink]
+            ["about", "/about"]
         ]
         links.map{|l| l[1] ?
             H.a(:href => l[1]) {H.entities l[0]} :
