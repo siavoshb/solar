@@ -765,8 +765,6 @@ post '/api/submit' do
         return {:status => "err", :error => "Wrong form secret."}.to_json
     end
 
-    logger.info "submitting - siavosh - news report"
-
     # We can have an empty url or an empty first comment, but not both.
     if (!check_params "title","news_id",:url,:text) or
                                (params[:url].length == 0 and
