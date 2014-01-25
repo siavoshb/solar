@@ -4,9 +4,9 @@ var redis = require("redis");
 var async = require('async');
 
 pools = {
-   /* 'http://blog.lostartpress.com/': '.post .entry-title a',*/
+    'http://blog.lostartpress.com/': '.post .entry-title a',
     'http://benchcrafted.blogspot.com/' : '.post-title a',
-  /*  'http://thecarpentryway.blogspot.com/' : '.post-title a',
+    'http://thecarpentryway.blogspot.com/' : '.post-title a',
     'http://www.rpwoodwork.com/blog/' : '.posttitle a',
     'http://www.theunpluggedwoodshop.com/' : '.entry-title a',
     'http://www.closegrain.com/' : '.post-title a',
@@ -58,8 +58,7 @@ pools = {
     'http://davidbarronfurniture.blogspot.co.uk/' : '.entry-title a',
     'http://philsville.blogspot.com/' : '.entry-title a',
     'http://www.floweringelbow.org/' : '.post h1 a',
-    'http://jeffbranch.wordpress.com/blog/' : '.title a'*/
-
+    'http://jeffbranch.wordpress.com/blog/' : '.title a'
 };
 
 client = redis.createClient(6379, '127.0.0.1', null);
