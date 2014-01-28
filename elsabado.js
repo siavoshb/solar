@@ -58,7 +58,9 @@ pools = {
     'http://davidbarronfurniture.blogspot.co.uk/' : '.entry-title a',
     'http://philsville.blogspot.com/' : '.entry-title a',
     'http://www.floweringelbow.org/' : '.post h1 a',
-    'http://jeffbranch.wordpress.com/blog/' : '.title a'
+    'http://jeffbranch.wordpress.com/blog/' : '.title a',
+    'http://zkprojectnotebook.wordpress.com/', '.entry-title a',
+    'http://donsbarn.com/musings/', '.post_title a'
 };
 
 client = redis.createClient(6379, '127.0.0.1', null);
