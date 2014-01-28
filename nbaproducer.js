@@ -11,7 +11,12 @@ pools = {
     'http://grantland.com/tags/nba/' : '.headline a',
     'http://hoopshype.com/articles.htm' : '.cms-item h1 a',
     'http://www.sbnation.com/nba-news-basketball-2013-14' : '.has-section h3 a',
-    'http://basketball.realgm.com/' : '.headlines ul li a'
+    'http://basketball.realgm.com/' : '.headlines ul li a',
+    'http://hardwoodparoxysm.com/' : '.entry-title a',
+    'http://hoopspeak.com/' : '.post-headline h2 a',
+    'http://hoopchalk.com/' : '.entry-title a',
+    'http://ballerball.com/' : '.entry-title a',
+    'http://gothicginobili.com/' : '.entry-title a'
 };
 
 client = redis.createClient(6380, '127.0.0.1', null);
