@@ -61,7 +61,8 @@ pools = {
     'http://jeffbranch.wordpress.com/blog/' : '.title a',
     'http://zkprojectnotebook.wordpress.com/', '.entry-title a',
     'http://donsbarn.com/musings/', '.post_title a',
-    'http://furnituremaking.com/wordpress/', '.entry-title a'
+    'http://furnituremaking.com/wordpress/', '.entry-title a',
+    'http://www.davidfinck.com/blog/', '.entry-title a'
 };
 
 client = redis.createClient(6379, '127.0.0.1', null);
