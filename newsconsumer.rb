@@ -244,19 +244,24 @@ while !addedstory and !news_string.nil?
 
     ntitle = parts.at(0).strip
     nurl = parts.at(1).strip
-    user_id = rand(NUM_USERS)
 
-    result =  insert_news(ntitle, nurl,"",user_id)
+    if nurl.index("http://") == 0 or nurl.index("https://") == 0
+        user_id = rand(NUM_USERS) + 1
 
-    if (result.is_a? Integer)
-        addedstory = true
-        puts "Done! Added " + ntitle + " at " + nurl
-        break
+        result =  insert_news(ntitle, nurl,"",user_id)
+
+        if (result.is_a? Integer)
+            addedstory = true
+            puts "Done! Added " + ntitle + " at " + nurl
+            break
+        else
+            addedstory = false
+            puts "Nope. Already exits " + ntitle + " at " + nurl 
+
+            news_string = $r.rpop(NEWS_QUEUE)
+        end
     else
-        addedstory = false
-        puts "Nope. Already exits " + ntitle + " at " + nurl 
-
+        puts "Bad url: " + nurl + " skipping"
         news_string = $r.rpop(NEWS_QUEUE)
     end
-    
 end
