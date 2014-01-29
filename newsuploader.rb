@@ -13,7 +13,7 @@ NewsEditTime = 60*15
 NewsScoreLogStart = 10
 NewsScoreLogBooster = 2
 RankAgingFactor = 1.1
-PreventRepostTime = 3600*48
+PreventRepostTime = 3600*1600
 NewsSubmissionBreak = 60*15
 SavedNewsPerPage = 10
 TopNewsAgeLimit = 3600*24*30
@@ -216,7 +216,7 @@ def insert_news(title,url,text,user_id)
     # Add the news into the top view
     $r.zadd("news.top",rank,news_id)
     # Add the news url for some time to avoid reposts in short time
-    #$r.setex("url:"+url,PreventRepostTime,news_id) if !textpost
+    $r.setex("url:"+url,PreventRepostTime,news_id) if !textpost
     # Set a timeout indicating when the user may post again
     #$r.setex("user:#{$user['id']}:submitted_recently",NewsSubmissionBreak,'1')
     return news_id

@@ -83,7 +83,7 @@ async.each(
 	            $(tagselector).each(function(post) {
 			    	
 			    		var newentry = $(this).text().trim() +  " @  " + $(this).attr('href');
-	            		client.lpush("newnewsqueue", newentry);
+	            		client.sadd("newnewsqueue", newentry);
 			        	console.log(newentry);
 				});
 
