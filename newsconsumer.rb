@@ -232,10 +232,10 @@ setup_redis
 
 NEWS_QUEUE = "newnewsqueue"
 
-NUM_USERS = 13
+NUM_USERS = 1
 
 addedstory = false
-news_string = $r.rpop(NEWS_QUEUE)
+news_string = $r.spop(NEWS_QUEUE)
 
 while !addedstory and !news_string.nil?
 
@@ -258,10 +258,10 @@ while !addedstory and !news_string.nil?
             addedstory = false
             puts "Nope. Already exits " + ntitle + " at " + nurl
 
-            news_string = $r.rpop(NEWS_QUEUE)
+            news_string = $r.spop(NEWS_QUEUE)
         end
     else
         puts "Bad url: " + nurl + " skipping"
-        news_string = $r.rpop(NEWS_QUEUE)
+        news_string = $r.spop(NEWS_QUEUE)
     end
 end
