@@ -235,7 +235,7 @@ filename = ARGV.first
 #filename = "/home/siavoshb/webapps/passenger_app/solar/news.txt"
 newnews = File.open(filename)
 
-NUM_USERS = 5
+NUM_USERS = 13
 
 newnews.each_line do |line|
     current_db_index = $r.get(UPLOAD_INDEX_KEY).to_i

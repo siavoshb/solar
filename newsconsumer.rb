@@ -232,7 +232,7 @@ setup_redis
 
 NEWS_QUEUE = "newnewsqueue"
 
-NUM_USERS = 15
+NUM_USERS = 13
 
 addedstory = false
 news_string = $r.rpop(NEWS_QUEUE)
