@@ -15,7 +15,8 @@ pools = {
     'http://hoopchalk.com/' : '.entry-title a',
     'http://ballerball.com/' : '.entry-title a',
     'http://gothicginobili.com/' : '.entry-title a',
-    'http://dimemag.com/' : '.post h2 a'
+    'http://dimemag.com/' : '.post h2 a',
+    'http://nba.si.com/' : '.post .inner .body h1 a'
 };
 
 client = redis.createClient(6380, '127.0.0.1', null);
