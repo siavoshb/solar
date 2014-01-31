@@ -5,7 +5,7 @@ var async = require('async');
 
 pools = {
     'http://hangtime.blogs.nba.com/?ls=iref:nba:gnav' : '.post h2 a',
-    'http://allball.blogs.nba.com/?ls=iref:nba:gnav' : '.post h2 a',
+    'http://allball.blogs.nba.com/' : '.post h2 a',
     'http://tbt.blogs.nba.com/?ls=iref:nba:gnav' : '.post h2 a',
     'http://espn.go.com/nba/' : '.headlines li a',
     'http://grantland.com/tags/nba/' : '.headline a',
@@ -16,7 +16,10 @@ pools = {
     'http://ballerball.com/' : '.entry-title a',
     'http://gothicginobili.com/' : '.entry-title a',
     'http://dimemag.com/' : '.post h2 a',
-    'http://nba.si.com/' : '.post .inner .body h1 a'
+    'http://nba.si.com/' : '.post .inner .body h1 a',
+    'http://sports.yahoo.com/blogs/nba-ball-dont-lie/' : '.body .body-wrap h3 a',
+    'http://www.basketballinsiders.com/category/nba-draft/' : '.home-title1 a',
+    'http://search.espn.go.com/brian-windhorst/' : '.result h3 a'
 };
 
 client = redis.createClient(6380, '127.0.0.1', null);
