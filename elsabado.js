@@ -66,7 +66,27 @@ pools = {
     'http://www.halfinchshy.com/' : '.entry-title a',
     'http://combraystudio.blogspot.com/' : '.entry-title a',
     'http://www.daedtoolworks.com/blog/' : '.post h2 a',
-    'http://cornishworkshop.blogspot.com/' : '.entry-title a'
+    'http://cornishworkshop.blogspot.com/' : '.entry-title a',
+    'http://blog.woodworkingtooltips.com/' : '.posttitle a',
+    'http://penultimatewoodshop.blogspot.com/' : '.post-title  a',
+    'http://toolerable.blogspot.com/' : '.post-title a',
+    'http://www.badgerwoodworks.com/blog/' : '.entry-title a',
+    'http://blacksheepwoodworker.wordpress.com/' : '.entry-title a',
+    'http://littlegoodpieces.wordpress.com/' : '.entry-title a',
+    'http://highrockwoodworking.com/' : '.entry-title a',
+    'http://sandal-woodsblog.com/' : '.entry-title a',
+    'http://stusshed.com/' : '.post h2 a',
+    'http://thecornerworkshop.blogspot.com/' : '.post-title a',
+    'http://digitalwoodworker.com/' : '.post h2 a',
+    'http://www.fullchisel.com/blog/' : '.storytitle a',
+    'http://logancabinetshoppe.com/blog/' : '.entry-title a',
+    'http://www.toolsforworkingwood.com/store//store/blog/joel' : 'td h1 a',
+    'http://www.toolsforworkingwood.com/store//store/blog/work' : 'td h1 a',
+    'http://dorsetcustomfurniture.blogspot.com/' : 'entry-title a',
+    'http://www.cabinwoodworks.com/' : '.post h2 a',
+    'http://beavesbench.com/' : '.post-title a',
+    'http://nelsonwoodcraft.blogspot.com/' : '.post-title a',
+    'http://nabilabdo.blogspot.com/' : '.post-title a'
 };
 
 client = redis.createClient(6379, '127.0.0.1', null);
