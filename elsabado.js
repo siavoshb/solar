@@ -86,7 +86,8 @@ pools = {
     'http://www.cabinwoodworks.com/' : '.post h2 a',
     'http://beavesbench.com/' : '.post-title a',
     'http://nelsonwoodcraft.blogspot.com/' : '.post-title a',
-    'http://nabilabdo.blogspot.com/' : '.post-title a'
+    'http://nabilabdo.blogspot.com/' : '.post-title a',
+    'http://lumberjocks.com' : '*append_url .one-three h3 a'
 };
 
 client = redis.createClient(6379, '127.0.0.1', null);
@@ -103,10 +104,26 @@ async.each(
 	            if (err)
 	                throw err;
 	            $ = cheerio.load(body);
+
+                append_url = false;
+                if (tagselector.indexOf("*append_url ") == 0) {
+                    append_url = true;
+                    tagselector = tagselector.replace("*append_url ", "")
+
+                    console.log(tagselector)
+                }
+
 	            
-	            $(tagselector).each(function(post) {
-			    	
-			    		var newentry = $(this).text().trim() +  " @  " + $(this).attr('href');
+	            $(tagselector).each(function(post)
+                {
+                        blog_post_url = "";
+                        if (append_url) {
+                            blog_post_url = url + $(this).attr('href');
+                        } else {
+                            blog_post_url = $(this).attr('href');
+                        }
+
+			    		var newentry = $(this).text().trim() +  " @  " + blog_post_url;
 	            		client.sadd("newnewsqueue", newentry);
 			        	console.log(newentry);
 				});

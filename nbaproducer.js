@@ -6,7 +6,6 @@ var async = require('async');
 pools = {
     'http://hangtime.blogs.nba.com/?ls=iref:nba:gnav' : '.post h2 a',
     'http://allball.blogs.nba.com/' : '.post h2 a',
-    'http://tbt.blogs.nba.com/?ls=iref:nba:gnav' : '.post h2 a',
     'http://espn.go.com/nba/' : '.headlines li a',
     'http://grantland.com/tags/nba/' : '.headline a',
     'http://www.sbnation.com/nba-news-basketball-2013-14' : '.has-section h3 a',
@@ -20,6 +19,7 @@ pools = {
     'http://sports.yahoo.com/blogs/nba-ball-dont-lie/' : '.body .body-wrap h3 a',
     'http://www.basketballinsiders.com/category/nba-draft/' : '.home-title1 a',
     'http://search.espn.go.com/brian-windhorst/' : '.result h3 a'
+    
 };
 
 client = redis.createClient(6380, '127.0.0.1', null);
@@ -36,10 +36,25 @@ async.each(
 	            if (err)
 	                throw err;
 	            $ = cheerio.load(body);
+
+                append_url = false;
+                if (tagselector.indexOf("*append_url ") == 0) {
+                    append_url = true;
+                    tagselector = tagselector.replace("*append_url ", "")
+
+                    console.log(tagselector)
+                }
 	            
-	            $(tagselector).each(function(post) {
-			    	
-			    		var newentry = $(this).text().trim() +  " @  " + $(this).attr('href');
+	            $(tagselector).each(function(post)
+                {
+                        blog_post_url = "";
+                        if (append_url) {
+                            blog_post_url = url + $(this).attr('href');
+                        } else {
+                            blog_post_url = $(this).attr('href');
+                        }
+
+			    		var newentry = $(this).text().trim() +  " @  " + blog_post_url;
 	            		client.sadd("newnewsqueue", newentry);
 			        	console.log(newentry);
 				});
@@ -50,7 +65,7 @@ async.each(
 	}
 	
 	,function(err) {
-		console.log("done! closing connection with redis")
+		//console.log("done! closing connection with redis")
 		client.quit() 
 	});
 
