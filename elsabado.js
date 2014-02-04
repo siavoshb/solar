@@ -87,7 +87,13 @@ pools = {
     'http://beavesbench.com/' : '.post-title a',
     'http://nelsonwoodcraft.blogspot.com/' : '.post-title a',
     'http://nabilabdo.blogspot.com/' : '.post-title a',
-    'http://lumberjocks.com' : '*append_url .one-three h3 a'
+    'http://lumberjocks.com' : '*append_url .one-three h3 a',
+    'http://www.toolsfromjapan.com/wordpress/?cat=3' : '.post-headline h2 a',
+    'http://orepass.wordpress.com/' : '.post h2 a',
+    'http://thesawblog.com/' : '.entry-title a',
+    'http://rainfordrestorations.wordpress.com/' : '.entry-title a',
+    'http://frontiercarpenter.blogspot.com/' : '.entry-title a'
+
 };
 
 client = redis.createClient(6379, '127.0.0.1', null);
