@@ -1674,7 +1674,7 @@ def news_to_html(news,order_num=0)
             "&#9650;"
         }+" "+
         H.h2 {
-            H.a(:href=>news["url"], :rel => "nofollow") {
+            H.a(:href=>news["url"], :rel => "nofollow", :target=>"_blank") {
                 H.entities (order_num>0 ? order_num.to_s+". " : "") + news["title"]
             }
         }+" "+

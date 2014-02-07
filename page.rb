@@ -142,6 +142,7 @@ class HTMLGen
                 self.link(:href => "/css/style.css?v=10", :rel => "stylesheet",
                           :type => "text/css")+
                 self.link(:href => "/favicon.ico", :rel => "shortcut icon")+
+                self.link(:href => "http://fonts.googleapis.com/css?family=Raleway:500", :rel => "stylesheet", :type => "text/css")+
                 self.script(:src => "/js/jquery.1.6.4.min.js"){}+
                 self.script(:src => "/js/app.js?v=10"){}
             }+
