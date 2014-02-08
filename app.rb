@@ -1195,15 +1195,17 @@ def create_user(username,password)
     #if rate_limit_by_ip(UserCreationDelay,"create_user",request.ip)
     #    return nil, "Please wait some time before creating a new user."
     #end
-    
+   
+    salt = get_rand
+    storable_password = hash_password(password, salt) 
+
     id = $r.incr("users.count")
     auth_token = get_rand
-    salt = get_rand
     $r.hmset("user:#{id}",
         "id",id,
         "username",username,
         "salt",salt,
-        "password",hash_password(password,salt),
+        "password", storable_password,
         "ctime",Time.now.to_i,
         "karma",UserInitialKarma,
         "about","",
@@ -1237,15 +1239,8 @@ end
 # Turn the password into an hashed one, using PBKDF2 with HMAC-SHA1
 # and 160 bit output.
 def hash_password(password,salt)
-    #p = PBKDF2.new do |p|
-    #    p.iterations = PBKDF2Iterations
-    #    p.password = password
-    #    p.salt = salt
-    #    p.key_length = 160/8
-    #end
-    #p.hex_string
-    
-    BCrypt::Password.create(password)
+    hashed_password = BCrypt::Password.create(password)
+    hashed_password.to_s
 end
 
 # Return the user from the ID.
