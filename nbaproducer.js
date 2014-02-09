@@ -20,7 +20,8 @@ pools = {
     'http://www.basketballinsiders.com/category/nba-draft/' : '.home-title1 a',
     'http://search.espn.go.com/brian-windhorst/' : '.result h3 a',
     'http://espn.go.com/blog/marc-stein/' : 'http://espn.go.com .mod-header h3 a',
-    'http://espn.go.com/blog/truehoop/' : 'http://espn.go.com .mod-header h3 a'
+    'http://espn.go.com/blog/truehoop/' : 'http://espn.go.com .mod-header h3 a',
+    'http://grantland.com/contributors/zach-lowe/' : '.bd .headline a'
 };
 
 if (PRODUCTION_MODE) {
