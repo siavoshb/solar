@@ -92,8 +92,8 @@ pools = {
     'http://orepass.wordpress.com/' : '.post h2 a',
     'http://thesawblog.com/' : '.entry-title a',
     'http://rainfordrestorations.wordpress.com/' : '.entry-title a',
-    'http://frontiercarpenter.blogspot.com/' : '.entry-title a'
-
+    'http://frontiercarpenter.blogspot.com/' : '.entry-title a',
+    'http://leelairdwoodworking.blogspot.com/' : '.post-title a'
 };
 
 client = redis.createClient(6379, '127.0.0.1', null);
