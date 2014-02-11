@@ -3,7 +3,7 @@ var cheerio = require('cheerio');
 var redis = require("redis");
 var async = require('async');
 
-PRODUCTION_MODE = false;
+PRODUCTION_MODE = true;
 
 pools = {
     'http://hangtime.blogs.nba.com/?ls=iref:nba:gnav' : '.post h2 a',
@@ -21,8 +21,9 @@ pools = {
     'http://search.espn.go.com/brian-windhorst/' : '.result h3 a',
     'http://espn.go.com/blog/marc-stein/' : 'http://espn.go.com .mod-header h3 a',
     'http://espn.go.com/blog/truehoop/' : 'http://espn.go.com .mod-header h3 a',
-    'http://grantland.com/contributors/zach-lowe/' : '.bd .headline a',
-    'http://www.rotoworld.com/sports/nba/basketball/' : 'http://www.rotoworld.com .story h3 a'
+    'http://grantland.com/contributors/zach-lowe/' : '.l-main .bd .headline a',
+    'http://www.rotoworld.com/sports/nba/basketball/' : 'http://www.rotoworld.com .story h3 a',
+    'http://grantland.com/contributors/zach-lowe/' : '.l-main .bd .headline a'
 };
 
 if (PRODUCTION_MODE) {
