@@ -22,8 +22,7 @@ pools = {
     'http://espn.go.com/blog/marc-stein/' : 'http://espn.go.com .mod-header h3 a',
     'http://espn.go.com/blog/truehoop/' : 'http://espn.go.com .mod-header h3 a',
     'http://grantland.com/contributors/zach-lowe/' : '.l-main .bd .headline a',
-    'http://www.rotoworld.com/sports/nba/basketball/' : 'http://www.rotoworld.com .story h3 a',
-    'http://grantland.com/contributors/zach-lowe/' : '.l-main .bd .headline a'
+    'http://www.rotoworld.com/sports/nba/basketball/' : 'http://www.rotoworld.com .story h3 a'
 };
 
 if (PRODUCTION_MODE) {
