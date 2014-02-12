@@ -78,6 +78,14 @@ get '/' do
     H.set_title "#{SiteName} - #{SiteDescription}"
     news,numitems = get_top_news
     H.page {
+        H.p {
+            bl = "javascript:void(window.open('#{SiteUrl}/submit?u='+encodeURIComponent(document.location)+'&t='+encodeURIComponent(document.title) ));"
+            "<div style='text-align: center; font-style:italic;'>Submitting news is simpler using the "+
+            H.a(:href => bl) {
+                "bookmarklet"
+            }+
+            " (drag the link to your browser toolbar)</div>"
+        } +
         H.h2 {"Top news"}+news_list_to_html(news)
     }
 end
@@ -327,7 +335,9 @@ get '/submit' do
         }+
         H.div(:id => "errormsg"){}+
         H.p {
-            bl = "javascript:window.location=%22#{SiteUrl}/submit?u=%22+encodeURIComponent(document.location)+%22&t=%22+encodeURIComponent(document.title)"
+            #bl = "javascript:window.location=%22#{SiteUrl}/submit?u=%22+encodeURIComponent(document.location)+%22&t=%22+encodeURIComponent(document.title)"
+            bl = "javascript:void(window.open('#{SiteUrl}/submit?u='+encodeURIComponent(document.location)+'&t='+encodeURIComponent(document.title) ));"
+
             "Submitting news is simpler using the "+
             H.a(:href => bl) {
                 "bookmarklet"
