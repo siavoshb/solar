@@ -81,7 +81,7 @@ get '/' do
         H.p {
             bl = "javascript:void(window.open('#{SiteUrl}/submit?u='+encodeURIComponent(document.location)+'&t='+encodeURIComponent(document.title) ));"
             "<div style='text-align: center; font-style:italic;'>Submitting news is simpler using the "+
-            H.a(:href => bl) {
+            H.a(:href => bl, :style => "text-decoration:underline") {
                 "bookmarklet"
             }+
             " (drag the link to your browser toolbar)</div>"
