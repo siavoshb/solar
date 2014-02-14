@@ -95,7 +95,25 @@ pools = {
     'http://frontiercarpenter.blogspot.com/' : '.entry-title a',
     'http://leelairdwoodworking.blogspot.com/' : '.post-title a',
     'http://dennisyoung-kagu.blogspot.com/' : '.post-title a',
-    'http://fabulalignarius.wordpress.com/' : '.entry-title a'  
+    'http://fabulalignarius.wordpress.com/' : '.entry-title a',
+    'http://www.robin-wood.co.uk/wood-craft-blog/' : '.title a',
+    'http://confusedwoodworker.wordpress.com/' : '.post h2 a',
+    'http://handguitar.wordpress.com/' : '.entry-title a',
+    'http://madebystephenhughes.com/blog/' : '.entry-title a',
+    'http://zerofret.wordpress.com/' : '.entry-title a',
+    'http://astriddegroot.wordpress.com/' : '.post h1 a',
+    'http://theschoolofthetransferofenergy.com/' : '.post h1 a',
+    'http://mvflaim.wordpress.com/' : '.post-title h1 a',
+    'http://millcrek.wordpress.com/' : '.entry-title a',
+    'http://npcarey.wordpress.com/category/ukulele/' : '.entry-title a',
+    'http://timetestedtools.wordpress.com/' : '.entry h2 a',
+    'http://thebutlerdiditwoodworks.com/' : '.entry-title a',
+    'http://homegrownlutherie.wordpress.com/' : '.post-title h1 a',
+    'http://timewarptoolworks.com/category/from-the-workshop/' : '.entry-title a',
+    'http://integritywoodworks.wordpress.com/blog/' : '.entry-title a',
+    'http://randomrovers.wordpress.com/' : '.entry-title a',
+    'http://togetherwewood.wordpress.com/' : '.entry-title a',
+    'http://northsummitblog.wordpress.com/' : '.entry-title a'
 };
 
 client = redis.createClient(6379, '127.0.0.1', null);
