@@ -99,7 +99,6 @@ pools = {
     'http://www.robin-wood.co.uk/wood-craft-blog/' : '.title a',
     'http://confusedwoodworker.wordpress.com/' : '.post h2 a',
     'http://handguitar.wordpress.com/' : '.entry-title a',
-    'http://madebystephenhughes.com/blog/' : '.entry-title a',
     'http://zerofret.wordpress.com/' : '.entry-title a',
     'http://astriddegroot.wordpress.com/' : '.post h1 a',
     'http://theschoolofthetransferofenergy.com/' : '.post h1 a',
@@ -113,7 +112,9 @@ pools = {
     'http://integritywoodworks.wordpress.com/blog/' : '.entry-title a',
     'http://randomrovers.wordpress.com/' : '.entry-title a',
     'http://togetherwewood.wordpress.com/' : '.entry-title a',
-    'http://northsummitblog.wordpress.com/' : '.entry-title a'
+    'http://northsummitblog.wordpress.com/' : '.entry-title a',
+    'http://planeshavings.blogspot.com/' : '.entry-title a',
+    'http://traditionalskills.wordpress.com/' : '.post-title h1 a'
 };
 
 client = redis.createClient(6379, '127.0.0.1', null);
