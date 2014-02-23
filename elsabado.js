@@ -119,7 +119,10 @@ pools = {
     'http://newenglishworkshop.wordpress.com/' : '.entry-title a',
     'http://northwestwoodworking.wordpress.com/' : '.entry-title a',
     'http://www.galoototron.com/' : '.entry-title a',
-    'http://thefamelesswoodworker.com/' : '.post-title h1 a'
+    'http://thefamelesswoodworker.com/' : '.post-title h1 a',
+    'http://www.finefurnituremaker.com/news/blog/' : '.entry-title a',
+    'http://feeds.feedburner.com/PeonyWoodworks?format=html' : '.regularitem .itemtitle a',
+    'http://imaokguy.blogspot.com/' : '.entry-title a'
 };
 
 client = redis.createClient(6379, '127.0.0.1', null);
