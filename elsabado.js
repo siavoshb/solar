@@ -122,7 +122,13 @@ pools = {
     'http://thefamelesswoodworker.com/' : '.post-title h1 a',
     'http://www.finefurnituremaker.com/news/blog/' : '.entry-title a',
     'http://feeds.feedburner.com/PeonyWoodworks?format=html' : '.regularitem .itemtitle a',
-    'http://imaokguy.blogspot.com/' : '.entry-title a'
+    'http://imaokguy.blogspot.com/' : '.entry-title a',
+    'http://www.spooncarvingfirststeps.com/' : '.entry-title a',
+    'http://simonhillgreenwoodwork.blogspot.com/' : '.entry-title a',
+    'http://customfurniture.us/index.php/furniture-blog/' : 'http://customfurniture.us .blog .item h2 a',
+    'http://zkprojectnotebook.wordpress.com/' : '.entry-title a',
+    'http://skottbenk.wordpress.com/' : '.entry-title a',
+    'http://woodbloker.blogspot.com/' : '.entry-title a'
 };
 
 client = redis.createClient(6379, '127.0.0.1', null);
@@ -141,11 +147,17 @@ async.each(
 	            $ = cheerio.load(body);
 
                 append_url = false;
+                append_given_url = false; given_url = '';
+                
                 if (tagselector.indexOf("*append_url ") == 0) {
                     append_url = true;
                     tagselector = tagselector.replace("*append_url ", "")
 
                     console.log(tagselector)
+                } else if (tagselector.indexOf("http") == 0) {
+                    append_given_url = true;
+                    given_url = tagselector.substring(0, tagselector.indexOf(" "));
+                    tagselector = tagselector.replace(given_url+" ", "");
                 }
 
 	            
@@ -154,6 +166,8 @@ async.each(
                         blog_post_url = "";
                         if (append_url) {
                             blog_post_url = url + $(this).attr('href');
+                        } else if (append_given_url) {
+                            blog_post_url = given_url + $(this).attr('href');
                         } else {
                             blog_post_url = $(this).attr('href');
                         }
