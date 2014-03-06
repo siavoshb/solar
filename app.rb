@@ -79,12 +79,7 @@ get '/' do
     news,numitems = get_top_news
     H.page {
         H.p {
-            bl = "javascript:void(window.open('#{SiteUrl}/submit?u='+encodeURIComponent(document.location)+'&t='+encodeURIComponent(document.title) ));"
-            "<div style='text-align: center; font-style:italic;'>Submitting news is simpler using the "+
-            H.a(:href => bl, :style => "text-decoration:underline") {
-                "bookmarklet"
-            }+
-            " (drag the link to your browser toolbar)</div>"
+            render_gallery_for(news)
         } +
         H.h2 {"Top news"}+news_list_to_html(news)
     }
@@ -1750,6 +1745,36 @@ def news_list_to_html(news)
         }
         aux
     }
+end
+
+def render_gallery_for(news)
+    H.section(:id => "gallerylist") {
+        aux = ""
+        count=0
+        news.each{|n|
+            img_html = render_image(n)
+            if (img_html.length > 0)
+                aux << img_html
+                count = count + 1
+            end
+
+            if count > 10
+                break
+            end
+        }
+        aux
+    }
+end
+
+def render_image(news)
+    if news['image'].length > 0
+        # bahras
+        "<a href='" + news['url'] + "'>" + 
+        "<img src='" + news['image'] + "' width='110' height='90'/>" +
+        "</a>"
+    else
+        ""
+    end
 end
 
 # Updating the rank would require some cron job and worker in theory as

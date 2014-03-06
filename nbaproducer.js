@@ -6,37 +6,40 @@ var async = require('async');
 PRODUCTION_MODE = true;
 
 pools = {
-    'http://hangtime.blogs.nba.com/?ls=iref:nba:gnav' : '.post h2 a',
-    'http://allball.blogs.nba.com/' : '.post h2 a',
-    'http://www.sbnation.com/nba-news-basketball-2013-14' : '.has-section h3 a',
-    'http://hardwoodparoxysm.com/' : '.entry-title a',
-    'http://hoopspeak.com/' : '.post-headline h2 a',
-    'http://hoopchalk.com/' : '.entry-title a',
-    'http://ballerball.com/' : '.entry-title a',
-    'http://gothicginobili.com/' : '.entry-title a',
-    'http://dimemag.com/' : '.post h2 a',
-    'http://nba.si.com/' : '.post .inner .body h1 a',
-    'http://sports.yahoo.com/blogs/nba-ball-dont-lie/' : '.body .body-wrap h3 a',
-    'http://www.basketballinsiders.com/category/nba-draft/' : '.home-title1 a',
-    'http://search.espn.go.com/brian-windhorst/' : '.result h3 a',
-    'http://espn.go.com/blog/marc-stein/' : 'http://espn.go.com .mod-header h3 a',
-    'http://espn.go.com/blog/truehoop/' : 'http://espn.go.com .mod-header h3 a',
-    'http://grantland.com/contributors/zach-lowe/' : '.l-main .bd .headline a',
-    'http://www.rotoworld.com/sports/nba/basketball/' : 'http://www.rotoworld.com .story h3 a',
-    'http://grantland.com/contributors/jonathan-abrams/' : '.l-main .bd .headline a',
+    'http://hangtime.blogs.nba.com/?ls=iref:nba:gnav' : {'blog' : '.post h2 a', 'img' : 'img'},
+    'http://allball.blogs.nba.com/' : {'blog' : '.post h2 a', 'img' : 'img'},
+    'http://www.sbnation.com/nba-news-basketball-2013-14' : {'blog' : '.has-section h3 a', 'img' : 'img'},
+    'http://hardwoodparoxysm.com/' : {'blog' : '.entry-title a', 'img' : 'img'},
+    'http://hoopspeak.com/' : {'blog' : '.post-headline h2 a', 'img' : 'img'},
+    'http://hoopchalk.com/' : {'blog' : '.entry-title a', 'img' : 'img'},
+    'http://ballerball.com/' : {'blog' : '.entry-title a', 'img' : 'img'},
+    'http://gothicginobili.com/' : {'blog' : '.entry-title a', 'img' : 'img'},
+    'http://dimemag.com/' : {'blog' :'.post h2 a', 'img' : 'img'},
+    'http://nba.si.com/' : {'blog' : '.post .inner .body h1 a', 'img' : 'img'},
+    'http://sports.yahoo.com/blogs/nba-ball-dont-lie/' : {'blog' : '.body .body-wrap h3 a', 'img' : 'img'},
+    'http://www.basketballinsiders.com/category/nba-draft/' : {'blog' : '.home-title1 a', 'img' : 'img'},
+    'http://search.espn.go.com/brian-windhorst/' : {'blog' : '.result h3 a', 'img' : 'img'},
+    'http://espn.go.com/blog/marc-stein/' : {'blog' : 'http://espn.go.com .mod-header h3 a', 'img' : 'img'},
+    'http://espn.go.com/blog/truehoop/' : {'blog' : 'http://espn.go.com .mod-header h3 a', 'img' : 'img'},
+    'http://grantland.com/contributors/zach-lowe/' : {'blog' : '.l-main .bd .headline a', 'img' : 'img'},
+    'http://www.rotoworld.com/sports/nba/basketball/' : {'blog' : 'http://www.rotoworld.com .story h3 a', 'img' : 'img'},
+    'http://grantland.com/contributors/jonathan-abrams/' : {'blog' : '.l-main .bd .headline a', 'img' : '.feature img'},
 };
 
 if (PRODUCTION_MODE) {
 	client = redis.createClient(6380, '127.0.0.1', null);
+    //client = redis.createClient(6379, '127.0.0.1', null);
 }
 
 async.each( 
 	Object.keys(pools)
 	
 	,function(url,callback) {
-		var tagselector = pools[url];
+		var attrs = pools[url];
+        blog_tagselector = attrs['blog']
+        img_tagselector = attrs['img']
 
-	    request(url, ( function(tagselector, callback) {
+	    request(url, ( function(blog_tagselector, callback) {
 
 	        return function(err, resp, body) {
 	            if (err)
@@ -46,20 +49,18 @@ async.each(
                 append_url = false;
                 append_given_url = false; given_url = '';
 
-                if (tagselector.indexOf("*append_url ") == 0) {
+                if (blog_tagselector.indexOf("*append_url ") == 0) {
                     append_url = true;
-                    tagselector = tagselector.replace("*append_url ", "")
-
-                    console.log(tagselector)
-                } else if (tagselector.indexOf("http") == 0) {
+                    blog_tagselector = blog_tagselector.replace("*append_url ", "")
+                } else if (blog_tagselector.indexOf("http") == 0) {
                 	append_given_url = true;
-                	given_url = tagselector.substring(0, tagselector.indexOf(" "));
-                	tagselector = tagselector.replace(given_url+" ", "");
+                	given_url = blog_tagselector.substring(0, blog_tagselector.indexOf(" "));
+                	blog_tagselector = blog_tagselector.replace(given_url+" ", "");
                 }
 
-                // console.log(tagselector)
+                // console.log(blog_tagselector)
 	            
-	            $(tagselector).each(function(post)
+	            $(blog_tagselector).each(function(post)
                 {
                         blog_post_url = "";
                         if (append_url) {
@@ -70,17 +71,30 @@ async.each(
                             blog_post_url = $(this).attr('href');
                         }
 
-			    		var newentry = $(this).text().trim() +  " @  " + blog_post_url;
+                        // image
 
-			    		if (PRODUCTION_MODE) {
-	            			client.sadd("newnewsqueue", newentry);
-	            		}
-			        	console.log(newentry);
+                        var newentry = $(this).text().trim() +  " @  " + blog_post_url;
+                        request(blog_post_url, function(error, response, body) {
+
+                            $ = cheerio.load(body);
+
+                            $(img_tagselector).each(function(post)
+                            {
+                                // console.log($(this).attr('src'))
+                                var imgsrc = $(this).attr('src');
+                                var newEntryWithImage = newentry + " @ " + imgsrc;
+                                console.log(newEntryWithImage)
+
+                                if (PRODUCTION_MODE) {
+                                    client.sadd("newnewsqueue", newEntryWithImage);
+                                }
+                            })
+                        })
 				});
 
 				callback()
 	        }
-	    })(tagselector, callback));
+	    })(blog_tagselector, callback));
 	}
 	
 	,function(err) {

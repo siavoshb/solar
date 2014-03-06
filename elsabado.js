@@ -128,7 +128,9 @@ pools = {
     'http://customfurniture.us/index.php/furniture-blog/' : 'http://customfurniture.us .blog .item h2 a',
     'http://zkprojectnotebook.wordpress.com/' : '.entry-title a',
     'http://skottbenk.wordpress.com/' : '.entry-title a',
-    'http://woodbloker.blogspot.com/' : '.entry-title a'
+    'http://woodbloker.blogspot.com/' : '.entry-title a',
+    'http://woodworkingbyhand2.blogspot.com/' : '.entry-title a',
+    'http://kiyond.blogspot.com/' : '.entry-title a'
 };
 
 client = redis.createClient(6379, '127.0.0.1', null);

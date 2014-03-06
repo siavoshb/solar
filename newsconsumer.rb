@@ -181,7 +181,7 @@ def vote_news(news_id,user_id,vote_type)
     return rank,nil
 end
 
-def insert_news(title,url,text,user_id)
+def insert_news(title,url,text,user_id,image)
     # If we don't have an url but a comment, we turn the url into
     # text://....first comment..., so it is just a special case of
     # title+url anyway.
@@ -206,7 +206,8 @@ def insert_news(title,url,text,user_id)
         "rank", 0,
         "up", 0,
         "down", 0,
-        "comments", 0)
+        "comments", 0,
+        "image", image)
     # The posting user virtually upvoted the news posting it
     rank,error = vote_news(news_id,user_id,:up)
     # Add the news to the user submitted news
@@ -244,11 +245,20 @@ while !addedstory and !news_string.nil?
 
     ntitle = parts.at(0).strip
     nurl = parts.at(1).strip
+    image = ""
+
+    puts "cnt " + parts.count.to_s
+
+    if parts.count > 2
+        image = parts.at(2).strip
+    end
+
+    puts "image: " + image
 
     if nurl.index("http://") == 0 or nurl.index("https://") == 0
         user_id = rand(NUM_USERS) + 1
 
-        result =  insert_news(ntitle, nurl,"",user_id)
+        result =  insert_news(ntitle, nurl,"",user_id, image)
 
         if (result.is_a? Integer)
             addedstory = true
