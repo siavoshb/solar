@@ -1767,7 +1767,7 @@ def render_gallery_for(news)
 end
 
 def render_image(news)
-    if news['image'].length > 0
+    if news['image'] && news['image'].length > 0
         # bahras
         "<a href='" + news['url'] + "'>" + 
         "<img src='" + news['image'] + "' width='110' height='90'/>" +
