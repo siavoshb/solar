@@ -1768,10 +1768,9 @@ end
 
 def render_image(news)
     if news['image'] && news['image'].length > 0
-        # bahras
-        "<a href='" + news['url'] + "'>" + 
-        "<img src='" + news['image'] + "' width='110' height='90'/>" +
-        "</a>"
+        H.a(:href=>news["url"], :target=>"_blank") {
+                "<img src='" + news['image'] + "' width='110' height='90'/>"
+            }
     else
         ""
     end
