@@ -10,7 +10,8 @@ if (PRODUCTION_MODE) {
 }
 
 pools = {
-    'http://blog.lostartpress.com/' : {'blog' : '.post .entry-title a', 'img' : '.entry-content img'},
+    'http://paulsellers.com/woodworking-blog/paul-sellers-blog/' : {'blog' : '.entry-title a', 'img' : '.post .entry-content img'},
+    'http://blog.lostartpress.com/' : {'blog' : '.post .entry-title a', 'img' : '.post .entry-content img'},
     'http://benchcrafted.blogspot.com/' : {'blog' : '.post-title a', 'img' : '.entry-content img'},
     'http://thecarpentryway.blogspot.com/' : {'blog' : '.post-title a', 'img' : '.entry-content img'},
     'http://www.rpwoodwork.com/blog/' : {'blog' : '.posttitle a', 'img' : '.entry-content img'},
@@ -21,7 +22,6 @@ pools = {
     'http://literaryworkshop.wordpress.com/' : {'blog' : '.entry-title a', 'img' : '.entry-content img'},
     'http://www.theenglishwoodworker.com/' : {'blog' : '#latest .spost h2 a', 'img' : '.entry-content img'},
     'http://www.chairnotes.blogspot.com/' : {'blog' : '.entry-title a', 'img' : '.entry-content img'},
-    'http://paulsellers.com/woodworking-blog/paul-sellers-blog/' : {'blog' : '.entry-title a', 'img' : '.entry-content img'},
     'http://pfollansbee.wordpress.com/' : {'blog' : '.post-title a', 'img' : '.entry-content img'},
     'http://brokenriverjoinery.wordpress.com/' : {'blog' : '.entry-title a', 'img' : '.entry-content img'},
     'http://uppercutwoodworks.com/tag/woodworking-blog/' : {'blog' : '.entry-title a', 'img' : '.entry-content img'},
