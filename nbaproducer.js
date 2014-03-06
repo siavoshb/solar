@@ -31,20 +31,22 @@ if (PRODUCTION_MODE) {
     //client = redis.createClient(6379, '127.0.0.1', null);
 }
 
+blogs = []
+
 async.each( 
-	Object.keys(pools)
-	
-	,function(url,callback) {
-		var attrs = pools[url];
+    Object.keys(pools)
+    
+    ,function(url,callback) {
+        var attrs = pools[url];
         blog_tagselector = attrs['blog']
         img_tagselector = attrs['img']
 
-	    request(url, ( function(blog_tagselector, callback) {
+        request(url, ( function(blog_tagselector, callback) {
 
-	        return function(err, resp, body) {
-	            if (err)
-	                throw err;
-	            $ = cheerio.load(body);
+            return function(err, resp, body) {
+                if (err)
+                    throw err;
+                $ = cheerio.load(body);
 
                 append_url = false;
                 append_given_url = false; given_url = '';
@@ -53,55 +55,68 @@ async.each(
                     append_url = true;
                     blog_tagselector = blog_tagselector.replace("*append_url ", "")
                 } else if (blog_tagselector.indexOf("http") == 0) {
-                	append_given_url = true;
-                	given_url = blog_tagselector.substring(0, blog_tagselector.indexOf(" "));
-                	blog_tagselector = blog_tagselector.replace(given_url+" ", "");
+                    append_given_url = true;
+                    given_url = blog_tagselector.substring(0, blog_tagselector.indexOf(" "));
+                    blog_tagselector = blog_tagselector.replace(given_url+" ", "");
                 }
 
                 // console.log(blog_tagselector)
-	            
-	            $(blog_tagselector).each(function(post)
+                
+                $(blog_tagselector).each(function(post)
                 {
                         blog_post_url = "";
                         if (append_url) {
                             blog_post_url = url + $(this).attr('href');
                         } else if (append_given_url) {
-                        	blog_post_url = given_url + $(this).attr('href');
+                            blog_post_url = given_url + $(this).attr('href');
                         } else {
                             blog_post_url = $(this).attr('href');
                         }
 
                         // image
-
                         var newentry = $(this).text().trim() +  " @  " + blog_post_url;
-                        request(blog_post_url, function(error, response, body) {
 
-                            $ = cheerio.load(body);
+                        blogs[newentry] = img_tagselector
+                });
 
-                            $(img_tagselector).each(function(post)
-                            {
-                                // console.log($(this).attr('src'))
-                                var imgsrc = $(this).attr('src');
-                                var newEntryWithImage = newentry + " @ " + imgsrc;
-                                console.log(newEntryWithImage)
+                callback()
+            }
+        })(blog_tagselector, callback, blogs));
+    }
+    
+    ,function(err) {
+        async.each(
+            Object.keys(blogs)
+            , function(newentry,callback) {
+                var img_tagselector = blogs[newentry];
+                
+                blog_post_url = newentry.split(" @ ")[1]
 
-                                if (PRODUCTION_MODE) {
-                                    client.sadd("newnewsqueue", newEntryWithImage);
-                                }
-                            })
-                        })
-				});
+                request(blog_post_url, function(error, response, body) {
 
-				callback()
-	        }
-	    })(blog_tagselector, callback));
-	}
-	
-	,function(err) {
-		//console.log("done! closing connection with redis")
-		if (PRODUCTION_MODE) {
-			client.quit() 
-		}
-	});
+                    $ = cheerio.load(body);
 
+                    $(img_tagselector).each(function(post)
+                    {
+                        // console.log($(this).attr('src'))
+                        var imgsrc = $(this).attr('src');
+                        var newEntryWithImage = newentry + " @ " + imgsrc;
+                        console.log(newEntryWithImage)
 
+                        if (PRODUCTION_MODE) {
+                            console.log(newEntryWithImage)
+                            client.sadd("newnewsqueue", newEntryWithImage);
+                        }
+                    })
+
+                    callback()
+                })
+            }
+            , function(err) {
+                //console.log("done! closing connection with redis")
+                if (PRODUCTION_MODE) {
+                    client.quit() 
+                }
+            })
+        }
+    )
