@@ -136,34 +136,35 @@ pools = {
 client = redis.createClient(6379, '127.0.0.1', null);
 
 async.each( 
-	Object.keys(pools)
-	
-	,function(url,callback) {
-		var tagselector = pools[url];
+    Object.keys(pools)
+    
+    ,function(url,callback) {
+        var attrs = pools[url];
+        blog_tagselector = attrs['blog']
+        img_tagselector = attrs['img']
 
-	    request(url, ( function(tagselector, callback) {
+        request(url, ( function(blog_tagselector, callback) {
 
-	        return function(err, resp, body) {
-	            if (err)
-	                throw err;
-	            $ = cheerio.load(body);
+            return function(err, resp, body) {
+                if (err)
+                    throw err;
+                $ = cheerio.load(body);
 
                 append_url = false;
                 append_given_url = false; given_url = '';
-                
-                if (tagselector.indexOf("*append_url ") == 0) {
-                    append_url = true;
-                    tagselector = tagselector.replace("*append_url ", "")
 
-                    console.log(tagselector)
-                } else if (tagselector.indexOf("http") == 0) {
+                if (blog_tagselector.indexOf("*append_url ") == 0) {
+                    append_url = true;
+                    blog_tagselector = blog_tagselector.replace("*append_url ", "")
+                } else if (blog_tagselector.indexOf("http") == 0) {
                     append_given_url = true;
-                    given_url = tagselector.substring(0, tagselector.indexOf(" "));
-                    tagselector = tagselector.replace(given_url+" ", "");
+                    given_url = blog_tagselector.substring(0, blog_tagselector.indexOf(" "));
+                    blog_tagselector = blog_tagselector.replace(given_url+" ", "");
                 }
 
-	            
-	            $(tagselector).each(function(post)
+                // console.log(blog_tagselector)
+                
+                $(blog_tagselector).each(function(post)
                 {
                         blog_post_url = "";
                         if (append_url) {
@@ -174,19 +175,37 @@ async.each(
                             blog_post_url = $(this).attr('href');
                         }
 
-			    		var newentry = $(this).text().trim() +  " @  " + blog_post_url;
-	            		client.sadd("newnewsqueue", newentry);
-			        	console.log(newentry);
-				});
+                        // image
 
-				callback()
-	        }
-	    })(tagselector, callback));
-	}
-	
-	,function(err) {
-		//console.log("done! closing connection with redis")
-		client.quit() 
-	});
+                        var newentry = $(this).text().trim() +  " @  " + blog_post_url;
+                        request(blog_post_url, function(error, response, body) {
+
+                            $ = cheerio.load(body);
+
+                            $(img_tagselector).each(function(post)
+                            {
+                                // console.log($(this).attr('src'))
+                                var imgsrc = $(this).attr('src');
+                                var newEntryWithImage = newentry + " @ " + imgsrc;
+                                console.log(newEntryWithImage)
+
+                                if (PRODUCTION_MODE) {
+                                    client.sadd("newnewsqueue", newEntryWithImage);
+                                }
+                            })
+                        })
+                });
+
+                callback()
+            }
+        })(blog_tagselector, callback));
+    }
+    
+    ,function(err) {
+        //console.log("done! closing connection with redis")
+        if (PRODUCTION_MODE) {
+            client.quit() 
+        }
+    });
 
 
