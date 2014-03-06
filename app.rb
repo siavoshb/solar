@@ -1758,7 +1758,7 @@ def render_gallery_for(news)
                 count = count + 1
             end
 
-            if count > 10
+            if count > 20
                 break
             end
         }
