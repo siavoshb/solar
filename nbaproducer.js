@@ -6,11 +6,12 @@ var async = require('async');
 PRODUCTION_MODE = true;
 
 pools = {
-    'http://hangtime.blogs.nba.com/?ls=iref:nba:gnav' : {'blog' : '.post h2 a', 'img' : 'img'},
-    'http://allball.blogs.nba.com/' : {'blog' : '.post h2 a', 'img' : 'img'},
-    'http://www.sbnation.com/nba-news-basketball-2013-14' : {'blog' : '.has-section h3 a', 'img' : 'img'},
-    'http://hardwoodparoxysm.com/' : {'blog' : '.entry-title a', 'img' : 'img'},
-    'http://hoopspeak.com/' : {'blog' : '.post-headline h2 a', 'img' : 'img'},
+    'http://hangtime.blogs.nba.com/?ls=iref:nba:gnav' : {'blog' : '.post h2 a', 'img' : '.post .entry img'},
+    'http://allball.blogs.nba.com/' : {'blog' : '.post h2 a', 'img' : 'do-not-load-any-images'},
+    'http://www.sbnation.com/nba-news-basketball-2013-14' : {'blog' : '.has-section h3 a', 'img' : '.m-entry__photo img'},
+    'http://hardwoodparoxysm.com/' : {'blog' : '.entry-title a', 'img' : '.post .entry-content img'},
+    'http://hoopspeak.com/' : {'blog' : '.post-headline h2 a', 'img' : '.post img'},
+    
     'http://hoopchalk.com/' : {'blog' : '.entry-title a', 'img' : 'img'},
     'http://ballerball.com/' : {'blog' : '.entry-title a', 'img' : 'img'},
     'http://gothicginobili.com/' : {'blog' : '.entry-title a', 'img' : 'img'},
