@@ -14,15 +14,16 @@ pools = {
     'http://blog.lostartpress.com/' : {'blog' : '.post .entry-title a', 'img' : '.post .entry-content img'},
     'http://benchcrafted.blogspot.com/' : {'blog' : '.post-title a', 'img' : '.post .entry-content img'},
     'http://thecarpentryway.blogspot.com/' : {'blog' : '.post-title a', 'img' : '.post .entry-content img'},
-    'http://www.rpwoodwork.com/blog/' : {'blog' : '.posttitle a', 'img' : '.post .entry-content img'},
+    'http://www.rpwoodwork.com/blog/' : {'blog' : '.posttitle a', 'img' : '.content .entry img'},
     'http://www.theunpluggedwoodshop.com/' : {'blog' : '.entry-title a', 'img' : '.post .entry-content img'},
     'http://www.closegrain.com/' : {'blog' : '.post-title a', 'img' : '.post .entry-content img'},
+    'http://pfollansbee.wordpress.com/' : {'blog' : '.post-title a', 'img' : '.post .post-content img'},
+
     'http://flairwoodworks.com/blog/' : {'blog' : '.entry-title a', 'img' : '.post .entry-content img'},
     'http://www.renaissancewoodworker.com/blog/' : {'blog' : '.entry-title a', 'img' : '.post .entry-content img'},
     'http://literaryworkshop.wordpress.com/' : {'blog' : '.entry-title a', 'img' : '.post .entry-content img'},
     'http://www.theenglishwoodworker.com/' : {'blog' : '#latest .spost h2 a', 'img' : '.post .entry-content img'},
     'http://www.chairnotes.blogspot.com/' : {'blog' : '.entry-title a', 'img' : '.post .entry-content img'},
-    'http://pfollansbee.wordpress.com/' : {'blog' : '.post-title a', 'img' : '.post .entry-content img'},
     'http://brokenriverjoinery.wordpress.com/' : {'blog' : '.entry-title a', 'img' : '.post .entry-content img'},
     'http://uppercutwoodworks.com/tag/woodworking-blog/' : {'blog' : '.entry-title a', 'img' : '.post .entry-content img'},
     'http://toolerable.blogspot.com/' : {'blog' : '.entry-title a', 'img' : '.post .entry-content img'},
@@ -148,6 +149,8 @@ async.each(
         var attrs = pools[url];
         blog_tagselector = attrs['blog']
         img_tagselector = attrs['img']
+
+        console.log(url)
 
         request(url, ( function(blog_tagselector, callback) {
 
