@@ -18,6 +18,7 @@ pools = {
     'http://www.theunpluggedwoodshop.com/' : {'blog' : '.entry-title a', 'img' : '.post .entry-content img'},
     'http://www.closegrain.com/' : {'blog' : '.post-title a', 'img' : '.post .entry-content img'},
     'http://pfollansbee.wordpress.com/' : {'blog' : '.post-title a', 'img' : '.post .post-content img'},
+    'http://dougberch.com/blog/' : {'blog' : '.entry-title a', 'img' : '.post .entry-content img'},
 
     'http://flairwoodworks.com/blog/' : {'blog' : '.entry-title a', 'img' : '.post .entry-content img'},
     'http://www.renaissancewoodworker.com/blog/' : {'blog' : '.entry-title a', 'img' : '.post .entry-content img'},
@@ -51,7 +52,6 @@ pools = {
     'http://wisdomofhands.blogspot.com/' : {'blog' : '.entry-title a', 'img' : '.post .entry-content img'},
     'http://accidentalwoodworker.blogspot.com/' : {'blog' : '.entry-title a', 'img' : '.post .entry-content img'},
     'http://www.blackburntools.com/blog/' : {'blog' : '.entry-title a', 'img' : '.post .entry-content img'},
-    'http://dougberch.com/blog/' : {'blog' : '.entry-title a', 'img' : '.post .entry-content img'},
     'http://pegsandtails.wordpress.com/' : {'blog' : '.entry-title a', 'img' : '.post .entry-content img'},
     'http://bowsaw.wordpress.com/' : {'blog' : '.entry-title a', 'img' : '.post .entry-content img'},
     'http://guitarluthier.blogspot.com/' : {'blog' : '.entry-title a', 'img' : '.post .entry-content img'},

@@ -79,11 +79,22 @@ get '/' do
     news,numitems = get_top_news
     H.page {
         H.p {
-            render_gallery_for(news)
+            render_gallery_for(news,10)
         } +
         H.h2 {"Top news"}+news_list_to_html(news)
     }
 end
+
+get '/gallery' do
+    H.set_title "#{SiteName} - #{SiteDescription}"
+    news,numitems = get_top_news
+    H.page {
+        H.p {
+            render_gallery_for(news,TopNewsPerPage*2)
+        }
+    }
+end
+
 
 get '/rss' do
     content_type 'text/xml', :charset => 'utf-8'
@@ -1043,6 +1054,7 @@ end
 def application_header
     navitems = [    ["top","/"],
                     ["latest","/latest/0"],
+                    ["gallery", "/gallery"],
                     ["random","/random"],                    
                     ["submit","/submit"],
                     ["about", "/about"]]
@@ -1747,7 +1759,7 @@ def news_list_to_html(news)
     }
 end
 
-def render_gallery_for(news)
+def render_gallery_for(news,numToDisplay)
     H.section(:id => "gallerylist") {
         aux = ""
         count=0
@@ -1758,7 +1770,7 @@ def render_gallery_for(news)
                 count = count + 1
             end
 
-            if count >= 10
+            if count >= numToDisplay
                 break
             end
         }
