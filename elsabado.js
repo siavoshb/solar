@@ -139,8 +139,8 @@ pools = {
     'http://woodworkingbyhand2.blogspot.com/' : {'blog' : '.entry-title a', 'img' : '.post .entry-content img'},
     'http://kiyond.blogspot.com/' : {'blog' : '.entry-title a', 'img' : '.post .entry-content img'},
     'http://seekelot.blogspot.com/' : {'blog' : '.entry-title a', '.post .entry-content img'},
-    'http://pedder-altedamenauskiel.blogspot.nl/' : {'blog' : '.entry-title a', '.post .entry-content img'}
-    
+    'http://pedder-altedamenauskiel.blogspot.nl/' : {'blog' : '.entry-title a', '.post .entry-content img'},
+    'http://www.holteyplanes.com/blog/' : {'blog' : '.storytitle a', '.storycontent a img'}
 };
 
 blogs = []
