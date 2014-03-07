@@ -137,7 +137,10 @@ pools = {
     'http://skottbenk.wordpress.com/' : {'blog' : '.entry-title a', 'img' : '.post .entry-content img'},
     'http://woodbloker.blogspot.com/' : {'blog' : '.entry-title a', 'img' : '.post .entry-content img'},
     'http://woodworkingbyhand2.blogspot.com/' : {'blog' : '.entry-title a', 'img' : '.post .entry-content img'},
-    'http://kiyond.blogspot.com/' : {'blog' : '.entry-title a', 'img' : '.post .entry-content img'}
+    'http://kiyond.blogspot.com/' : {'blog' : '.entry-title a', 'img' : '.post .entry-content img'},
+    'http://seekelot.blogspot.com/' : {'blog' : '.entry-title a', '.post .entry-content img'},
+    'http://pedder-altedamenauskiel.blogspot.nl/' : {'blog' : '.entry-title a', '.post .entry-content img'}
+    
 };
 
 blogs = []
