@@ -1,7 +1,7 @@
 # General
-SiteName = "Hoopspotting"
-SiteUrl = "http://hoopspotting.com"
-SiteDescription = "An Intelligent Discourse of All Things NBA"
+SiteName = "Woodspotting"
+SiteUrl = "http://woodspotting.com"
+SiteDescription = "Woodworking News"
 
 # Redis config
 RedisURL = "redis://127.0.0.1:6379"
@@ -65,6 +65,5 @@ MailFrom = "noreply@example.com"
 
 # news producer and consumer settings
 NewsQueue = "newnewsqueue"
-BlogSitesJson = "hoop_sites.json"
-NumUsers = 1
-
+BlogSitesJson = "/home/siavoshb/webapps/passenger_app/solar/wood_sites.json"
+NumUsers = 13
