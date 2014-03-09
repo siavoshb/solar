@@ -90,7 +90,7 @@ get '/gallery' do
     news,numitems = get_top_news
     H.page {
         H.p {
-            H.h2 {"Top Gallery"}+render_gallery_for(news,100,'large')
+            H.h2 {"Top Gallery"}+render_gallery_for(news,TopNewsPerPage,'large')
         }
     }
 end
@@ -1783,11 +1783,11 @@ def render_image(news,size)
 
         if (size=='small')
             H.a(:href=>news["url"], :target=>"_blank") {
-                    "<img src='" + news['image'] + "' width='110' height='100'/>"
+                    "<img src='" + news['image'] + "' width='110' height='120'/>"
                 }
         else
             H.a(:href=>news["url"], :target=>"_blank") {
-                    "<img src='" + news['image'] + "' width='220' height='200'/>"
+                    "<img src='" + news['image'] + "' width='220' height='240'/>"
                 }
         end
     else
