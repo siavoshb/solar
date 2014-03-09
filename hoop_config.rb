@@ -65,6 +65,6 @@ MailFrom = "noreply@example.com"
 
 # news producer and consumer settings
 NewsQueue = "newnewsqueue"
-BlogSitesJson = "hoop_sites.json"
+BlogSitesJson = "/home/siavoshb/webapps/passenger_app/solar/hoop_sites.json"
 NumUsers = 12
 
