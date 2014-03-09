@@ -1783,11 +1783,11 @@ def render_image(news,size)
 
         if (size=='small')
             H.a(:href=>news["url"], :target=>"_blank") {
-                    "<img src='" + news['image'] + "' width='110' height='120'/>"
+                    "<img src='" + news['image'] + "' width='110' height='110'/>"
                 }
         else
             H.a(:href=>news["url"], :target=>"_blank") {
-                    "<img src='" + news['image'] + "' width='220' height='240'/>"
+                    "<img src='" + news['image'] + "' width='220' height='220'/>"
                 }
         end
     else
