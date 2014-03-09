@@ -87,10 +87,10 @@ end
 
 get '/gallery' do
     H.set_title "#{SiteName} - #{SiteDescription}"
-    news,numitems = get_top_news(0,TopNewsPerPage)
+    news,numitems = get_top_news(0,TopNewsPerPage*4)
     H.page {
         H.p {
-            H.h2 {"Top Gallery"}+render_gallery_for(news,TopNewsPerPage,'large')
+            H.h2 {"Top Gallery"}+render_gallery_for(news,TopNewsPerPage*4,'large')
         }
     }
 end
