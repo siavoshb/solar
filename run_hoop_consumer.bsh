@@ -2,5 +2,5 @@
 
 GEM_HOME=/home/siavoshb/.gem/ruby/2.0.0
 
-/usr/local/bin/ruby2.0 /home/siavoshb/webapps/passenger_app/solar/newsconsumer.rb >> /home/siavoshb/logs/user/cron_log_hoop_consumer.txt
+/usr/local/bin/ruby2.0 /home/siavoshb/webapps/hoops_passenger_app/solar/newsconsumer.rb >> /home/siavoshb/logs/user/cron_log_hoop_consumer.txt
 
