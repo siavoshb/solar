@@ -90,7 +90,7 @@ get '/gallery' do
     news,numitems = get_top_news
     H.page {
         H.p {
-            H.h2 {"Top Gallery"}+render_gallery_for(news,TopNewsPerPage*3,'large')
+            H.h2 {"Top Gallery"}+render_gallery_for(news,100,'large')
         }
     }
 end
