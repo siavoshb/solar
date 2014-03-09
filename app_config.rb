@@ -1,10 +1,9 @@
 # General
-SiteName = "Woodspotting"
-SiteUrl = "http://woodspotting.com"
-SiteDescription = "Woodworking News"
+SiteName = "Hoopspotting"
+SiteUrl = "http://hoopspotting.com"
+SiteDescription = "An Intelligent Discourse of All Things NBA"
 
 # Redis config
-#RedisURL = "redis://127.0.0.1:10000"
 RedisURL = "redis://127.0.0.1:6379"
 
 # Security
@@ -63,3 +62,9 @@ APIMaxNewsCount = 32
 # (this will prevent users from recovery accounts if the password gets lost).
 MailRelay = "localhost"
 MailFrom = "noreply@example.com"
+
+# news producer and consumer settings
+NewsQueue = "newnewsqueue"
+BlogSitesJson = "hoop_sites.json"
+NumUsers = 1
+

@@ -79,7 +79,7 @@ get '/' do
     news,numitems = get_top_news
     H.page {
         H.p {
-            render_gallery_for(news,10)
+            render_gallery_for(news,10,'small')
         } +
         H.h2 {"Top news"}+news_list_to_html(news)
     }
@@ -90,7 +90,7 @@ get '/gallery' do
     news,numitems = get_top_news
     H.page {
         H.p {
-            render_gallery_for(news,TopNewsPerPage*3)
+            H.h2 {"Top Gallery"}+render_gallery_for(news,TopNewsPerPage*3,'large')
         }
     }
 end
@@ -1759,12 +1759,12 @@ def news_list_to_html(news)
     }
 end
 
-def render_gallery_for(news,numToDisplay)
+def render_gallery_for(news,numToDisplay,image_size)
     H.section(:id => "gallerylist") {
         aux = ""
         count=0
         news.each{|n|
-            img_html = render_image(n)
+            img_html = render_image(n,image_size)
             if (img_html.length > 0)
                 aux << img_html
                 count = count + 1
@@ -1778,11 +1778,18 @@ def render_gallery_for(news,numToDisplay)
     }
 end
 
-def render_image(news)
+def render_image(news,size)
     if news['image'] && news['image'].length > 0
-        H.a(:href=>news["url"], :target=>"_blank") {
-                "<img src='" + news['image'] + "' width='110' height='90'/>"
-            }
+
+        if (size=='small')
+            H.a(:href=>news["url"], :target=>"_blank") {
+                    "<img src='" + news['image'] + "' width='110' height='90'/>"
+                }
+        else
+            H.a(:href=>news["url"], :target=>"_blank") {
+                    "<img src='" + news['image'] + "' width='220' height='180'/>"
+                }
+        end
     else
         ""
     end

@@ -62,3 +62,9 @@ APIMaxNewsCount = 32
 # (this will prevent users from recovery accounts if the password gets lost).
 MailRelay = "localhost"
 MailFrom = "noreply@example.com"
+
+# news producer and consumer settings
+NewsQueue = "newnewsqueue"
+BlogSitesJson = "hoop_sites.json"
+NumUsers = 12
+

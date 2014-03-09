@@ -1,24 +1,10 @@
 #!/usr/bin/env ruby
-
+require_relative 'app_config'
 require 'rubygems'
 require 'hiredis'
 require 'redis'
 require 'json'
 require 'uri'
-
-NewsAgePadding = 3600*8
-TopNewsPerPage = 30
-LatestNewsPerPage = 100
-NewsEditTime = 60*15
-NewsScoreLogStart = 10
-NewsScoreLogBooster = 2
-RankAgingFactor = 1.1
-PreventRepostTime = 3600*1600
-NewsSubmissionBreak = 60*15
-SavedNewsPerPage = 10
-TopNewsAgeLimit = 3600*24*30
-
-RedisURL = "redis://127.0.0.1:6379"
 
 #def increment_user_karma_by(user_id,increment)
 #    userkey = "user:#{user_id}"
@@ -231,12 +217,8 @@ end
 # Main -----------------------
 setup_redis
 
-NEWS_QUEUE = "newnewsqueue"
-
-NUM_USERS = 13
-
 addedstory = false
-news_string = $r.spop(NEWS_QUEUE)
+news_string = $r.spop(NewsQueue)
 
 while !addedstory and !news_string.nil?
 
@@ -253,10 +235,8 @@ while !addedstory and !news_string.nil?
         image = parts.at(2).strip
     end
 
-    puts "image: " + image
-
     if nurl.index("http://") == 0 or nurl.index("https://") == 0
-        user_id = rand(NUM_USERS) + 1
+        user_id = rand(NumUsers) + 1
 
         result =  insert_news(ntitle, nurl,"",user_id, image)
 
@@ -268,10 +248,10 @@ while !addedstory and !news_string.nil?
             addedstory = false
             puts "Nope. Already exits " + ntitle + " at " + nurl
 
-            news_string = $r.spop(NEWS_QUEUE)
+            news_string = $r.spop(NewsQueue)
         end
     else
         puts "Bad url: " + nurl + " skipping"
-        news_string = $r.spop(NEWS_QUEUE)
+        news_string = $r.spop(NewsQueue)
     end
 end

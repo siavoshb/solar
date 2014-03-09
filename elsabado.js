@@ -18,7 +18,7 @@ pools = {
     'http://www.theunpluggedwoodshop.com/' : {'blog' : '.entry-title a', 'img' : '.post .entry-content img'},
     'http://www.closegrain.com/' : {'blog' : '.post-title a', 'img' : '.post .entry-content img'},
     'http://pfollansbee.wordpress.com/' : {'blog' : '.post-title a', 'img' : '.post .post-content img'},
-    'http://dougberch.com/blog/' : {'blog' : '.entry-title a', 'img' : '.post .entry-content img'},
+    'http://dougberch.com/blog/' : {'blog' : '.entry-title a', 'img' : '.zzzzzzzz'},
 
     'http://flairwoodworks.com/blog/' : {'blog' : '.entry-title a', 'img' : '.post .entry-content img'},
     'http://www.renaissancewoodworker.com/blog/' : {'blog' : '.entry-title a', 'img' : '.post .entry-content img'},
