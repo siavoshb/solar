@@ -9,7 +9,7 @@
     },
     "http://www.sbnation.com/nba-news-basketball-2013-14": {
         "blog": ".has-section h3 a",
-        "img": ".m-entry__photo img"
+        "img": ".m-entry__top-hero .m-entry__photo img"
     },
     "http://hardwoodparoxysm.com/": {
         "blog": ".entry-title a",
