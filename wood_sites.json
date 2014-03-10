@@ -516,5 +516,9 @@
     "http://riversjoinery.blogspot.co.uk/": {
         "blog": ".entry-title a",
         "img": ".post-body a img"
+    },
+    "http://axework.wordpress.com/": {
+        "blog": ".entry-title a",
+        "img": ".entry-content .wp-caption a img"
     }
 }
