@@ -512,5 +512,9 @@
     "http://www.holteyplanes.com/blog/": {
         "blog": ".storytitle a",
         "img": ".storycontent a img"
+    },
+    "http://riversjoinery.blogspot.co.uk/": {
+        "blog": ".entry-title a",
+        "img": ".post-body a img"
     }
 }
