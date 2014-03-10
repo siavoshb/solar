@@ -25,23 +25,23 @@
     },
     "http://hoopchalk.com/": {
         "blog": ".entry-title a",
-        "img": "img"
+        "img": ".post .entry-content img"
     },
     "http://ballerball.com/": {
         "blog": ".entry-title a",
-        "img": "img"
+        "img": ".post .entry-media img"
     },
     "http://gothicginobili.com/": {
         "blog": ".entry-title a",
-        "img": "img"
+        "img": ".post .entry-content img"
     },
     "http://nba.si.com/": {
         "blog": ".post .inner .body h1 a",
-        "img": "img"
+        "img": ".wp-caption img"
     },
     "http://sports.yahoo.com/blogs/nba-ball-dont-lie/": {
         "blog": ".body .body-wrap h3 a",
-        "img": "img"
+        "img": ".cta-overlay img"
     },
     "http://www.basketballinsiders.com/category/nba-draft/": {
         "blog": ".home-title1 a",
@@ -49,28 +49,28 @@
     },
     "http://search.espn.go.com/brian-windhorst/": {
         "blog": ".result h3 a",
-        "img": "img"
+        "img": ".mod-content img"
     },
     "http://espn.go.com/blog/marc-stein/": {
         "blog": ".mod-header h3 a",
         "append_custom_url_to_blog_url": "http: //espn.go.com",
-        "img": "img"
+        "img": ".mod-content .image img"
     },
-    "http: //espn.go.com/blog/truehoop/": {
+    "http://espn.go.com/blog/truehoop/": {
         "blog": ".mod-headerh3a",
         "append_custom_url_to_blog_url": "http: //espn.go.com",
-        "img": "img"
+        "img": ".mod-content .image img"
     },
-    "http: //grantland.com/contributors/zach-lowe/": {
+    "http://grantland.com/contributors/zach-lowe/": {
         "blog": ".l-main.bd.headlinea",
-        "img": "img"
+        "img": ".blog-body .feature img"
     },
-    "http: //www.rotoworld.com/sports/nba/basketball/": {
+    "http://www.rotoworld.com/sports/nba/basketball/": {
         "blog": "http: //www.rotoworld.com.storyh3a",
         "img": "img"
     },
-    "http: //grantland.com/contributors/jonathan-abrams/": {
+    "http://grantland.com/contributors/jonathan-abrams/": {
         "blog": ".l-main.bd.headlinea",
-        "img": ".featureimg"
+        "img": ".feature img"
     }
 }
