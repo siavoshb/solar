@@ -45,7 +45,7 @@
     },
     "http://www.basketballinsiders.com/category/nba-draft/": {
         "blog": ".home-title1 a",
-        "img": "img"
+        "img": ".post .post-image img"
     },
     "http://search.espn.go.com/brian-windhorst/": {
         "blog": ".result h3 a",
@@ -67,7 +67,7 @@
     },
     "http://www.rotoworld.com/sports/nba/basketball/": {
         "blog": "http: //www.rotoworld.com.storyh3a",
-        "img": "img"
+        "img": ".no-image-none"
     },
     "http://grantland.com/contributors/jonathan-abrams/": {
         "blog": ".l-main.bd.headlinea",
