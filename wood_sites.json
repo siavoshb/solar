@@ -549,5 +549,29 @@
     "http://anthonyhaycabinetmaker.wordpress.com/": {
         "blog": ".entry-title a",
         "img": ".entry-content p a img"
+    },
+    "http://www.eatoncountywoodworker.blogspot.com/" : {
+        "blog": ".entry-title a",
+        "img": ".post-body a img"
+    },
+    "http://thekiltedwoodworker.com/" : {
+        "blog": ".post-header h2 a",
+        "img": ".post-body a img"
+    },
+    "http://joecrafted.wordpress.com/": {
+        "blog": ".post-title a",
+        "img": ".post-text p a img"
+    },
+    "http://dans-woodshop.blogspot.com/": {
+        "blog": ".post-title a",
+        "img": ".entry-content a img"
+    },
+    "http://thebenchroom.com/": {
+        "blog": ".entry-title a",
+        "img": ".entry-content a img"
+    },
+    "http://trialanderrorwoodworker.wordpress.com/": {
+        "blog": ".post-title h1 a",
+        "img": ".tiled-gallery-item-large a img"
     }
 }
