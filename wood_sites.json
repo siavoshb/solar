@@ -520,5 +520,34 @@
     "http://axework.wordpress.com/": {
         "blog": ".entry-title a",
         "img": ".entry-content .wp-caption a img"
+    },
+    "http://axework.wordpress.com/": {
+        "blog": ".entry-title a",
+        "img": ".entry-content .wp-caption a img"
+    },
+    "http://www.beautifulwood.co.uk/blog/": {
+        "blog": ".journal-entry-text .title a",
+        "append_base_url_to_blog_url": true,
+        "img": ".full-image-block img"
+    },
+    "http://www.bob-easton.com/blog/": {
+        "blog": ".post h2 a",
+        "img": ".entry a img"
+    },
+    "http://anthonyhaycabinetmaker.wordpress.com/": {
+        "blog": ".entry-title a",
+        "img": ".entry-content p a img"
+    },
+    "http://www.beautifulwood.co.uk/blog/": {
+        "blog": ".post-text .title a",
+        "append_custom_url_to_blog_url": "http://www.beautifulwood.co.uk"
+    },
+    "http://www.bob-easton.com/blog/": {
+        "blog": ".post h2 a",
+        "img": ".entry a img"
+    },
+    "http://anthonyhaycabinetmaker.wordpress.com/": {
+        "blog": ".entry-title a",
+        "img": ".entry-content p a img"
     }
 }
