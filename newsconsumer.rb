@@ -194,6 +194,8 @@ def insert_news(title,url,text,user_id,image)
         "down", 0,
         "comments", 0,
         "image", image)
+    # Add the news url for some time to avoid reposts in short time
+    $r.set("url:"+url,news_id) if !textpost
     # The posting user virtually upvoted the news posting it
     rank,error = vote_news(news_id,user_id,:up)
     # Add the news to the user submitted news
@@ -203,7 +205,8 @@ def insert_news(title,url,text,user_id,image)
     # Add the news into the top view
     $r.zadd("news.top",rank,news_id)
     # Add the news url for some time to avoid reposts in short time
-    $r.setex("url:"+url,PreventRepostTime,news_id) if !textpost
+    #$r.setex("url:"+url,PreventRepostTime,news_id) if !textpost
+    #$r.setex("url:"+url,60*60*24*30,news_id) if !textpost
     # Set a timeout indicating when the user may post again
     #$r.setex("user:#{$user['id']}:submitted_recently",NewsSubmissionBreak,'1')
     return news_id

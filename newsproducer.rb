@@ -26,12 +26,13 @@ def make_http_request( url_string )
 	res.body
 end
 
-def construct_blog_url(post_url, parameters)
+def construct_blog_url(url_string, post_url, parameters)
 	if parameters['append_base_url_to_blog_url']
 		post_url = url_string + post_url
 	elsif parameters['append_custom_url_to_blog_url']
 		post_url = parameters['append_custom_url_to_blog_url'] + post_url
 	end
+	puts post_url
 	post_url
 end
 
@@ -59,7 +60,7 @@ def main
 			blog_posts.each do |post_link_html|
 				
 				post_title = post_link_html.text
-				post_url = construct_blog_url(post_link_html['href'], parameters)
+				post_url = construct_blog_url(url_string, post_link_html['href'], parameters)
 
 				puts "requesting and parsing\t#{post_title} - #{post_url}"
 				post_html = make_http_request(post_url)
@@ -70,7 +71,7 @@ def main
 				if parameters['img']
 					img_link_html = post_dom.css(parameters['img'])[0]
 					if img_link_html
-						img_url = img_link_html['src']
+						img_url = construct_blog_url(url_string, img_link_html['src'], parameters)# img_link_html['src']
 					end
 				end
 
@@ -79,7 +80,8 @@ def main
 
 			end
 
-		rescue
+		rescue => exception
+			puts exception.backtrace
 			puts "Exception occured scraping #{url_string}"
 		end
 
