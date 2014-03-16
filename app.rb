@@ -86,7 +86,7 @@ get '/' do
 end
 
 get '/gallery' do
-    H.set_title "#{SiteName} - #{SiteDescription}"
+    H.set_title "Woodworking Blog Gallery - #{SiteDescription}"
     news,numitems = get_top_news(0,TopNewsPerPage*4)
     H.page {
         H.p {
@@ -121,7 +121,7 @@ end
 
 get '/latest/:start' do
     start = params[:start].to_i
-    H.set_title "Latest news - #{SiteName}"
+    H.set_title "Latest woodworking news - #{SiteName}"
     paginate = {
         :get => Proc.new {|start,count|
             get_latest_news(start,count)

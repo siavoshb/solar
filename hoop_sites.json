@@ -1,7 +1,7 @@
 {
     "http://hangtime.blogs.nba.com/?ls=iref:nba:gnav": {
         "blog": ".post h2 a",
-        "img": ".post .entry img"
+        "img": "do-not-load-any-images"
     },
     "http://allball.blogs.nba.com/": {
         "blog": ".post h2 a",
@@ -9,7 +9,7 @@
     },
     "http://www.sbnation.com/nba-news-basketball-2013-14": {
         "blog": ".has-section h3 a",
-        "img": ".m-entry__top-hero .m-entry__photo img"
+        "img": "do-not-load-any-images"
     },
     "http://hardwoodparoxysm.com/": {
         "blog": ".entry-title a",

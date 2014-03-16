@@ -573,5 +573,9 @@
     "http://trialanderrorwoodworker.wordpress.com/": {
         "blog": ".post-title h1 a",
         "img": ".tiled-gallery-item-large a img"
+    },
+    "http://thefurniturerecord.wordpress.com/": {
+        "blog": ".post-title h1 a",
+        "img": ".wp-caption a img"
     }
 }
