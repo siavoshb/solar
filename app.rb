@@ -81,6 +81,11 @@ get '/' do
     if (ShowImageTicker)
         H.page {
             H.p {
+                "<img src='images/mail.png' height='32' width='32'/> Welcome! Woodspotting has been up for a couple months,
+                and I'm looking to make it even better. If you have any thoughts or comments please let me know! 
+                You can email me at <a href='mailto:siavoshb@yahoo.com?Subject=Woodspotting%20Feedback' target='_top'>siavoshb@yahoo.com</a><br><br>"
+            } +
+            H.p {
                 render_gallery_for(news,10,'small')
             } +
             H.h2 {"Top news"}+news_list_to_html(news)
@@ -90,8 +95,6 @@ get '/' do
             H.h2 {"Top news"}+news_list_to_html(news)
         }
     end
-
-    
 end
 
 get '/gallery' do
@@ -103,7 +106,6 @@ get '/gallery' do
         }
     }
 end
-
 
 get '/rss' do
     content_type 'text/xml', :charset => 'utf-8'
