@@ -67,4 +67,5 @@ MailFrom = "noreply@example.com"
 NewsQueue = "newnewsqueue"
 BlogSitesJson = "/home/siavoshb/webapps/hoops_passenger_app/solar/hoop_sites.json"
 NumUsers = 12
+ShowImageTicker = false
 

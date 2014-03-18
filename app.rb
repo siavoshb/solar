@@ -77,12 +77,21 @@ end
 get '/' do
     H.set_title "#{SiteName} - #{SiteDescription}"
     news,numitems = get_top_news
-    H.page {
-        H.p {
-            render_gallery_for(news,10,'small')
-        } +
-        H.h2 {"Top news"}+news_list_to_html(news)
-    }
+
+    if (ShowImageTicker)
+        H.page {
+            H.p {
+                render_gallery_for(news,10,'small')
+            } +
+            H.h2 {"Top news"}+news_list_to_html(news)
+        }
+    else
+        H.page {
+            H.h2 {"Top news"}+news_list_to_html(news)
+        }
+    end
+
+    
 end
 
 get '/gallery' do
