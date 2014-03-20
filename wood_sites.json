@@ -327,11 +327,6 @@
         "blog": ".post-title a",
         "img": ".post .entry-content img"
     },
-    "http://lumberjocks.com/": {
-        "blog": ".one-three h3 a",
-        "append_base_url_to_blog_url": true,
-        "img": "#project-pictures .main img"
-    },
     "http://www.toolsfromjapan.com/wordpress/?cat=3": {
         "blog": ".post-headline h2 a",
         "img": ".post .entry-content img"
