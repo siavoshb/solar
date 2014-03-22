@@ -576,5 +576,11 @@
     "http://blog.douglasbrooksboatbuilding.com/": {
         "blog": ".post-title a",
         "img": ".post-body a img"
+    },
+    "http://mypeculiarnature.blogspot.com/": {
+        "blog": ".post-title a",
+        "img": ".entry-content a img"
     }
+
+
 }
