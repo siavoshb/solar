@@ -477,7 +477,7 @@
     },
     "http://customfurniture.us/index.php/furniture-blog/": {
         "blog": ".blog .item h2 a",
-	"append_custom_url_to_blog_url": "http://customfurniture.us",
+    "append_custom_url_to_blog_url": "http://customfurniture.us",
         "img": ".post .entry-content img"
     },
     "http://skottbenk.wordpress.com/": {
@@ -580,7 +580,13 @@
     "http://mypeculiarnature.blogspot.com/": {
         "blog": ".post-title a",
         "img": ".entry-content a img"
+    },
+    "http://www.bridgecitytools.com/blog/": {
+        "blog": ".entry-title a",
+        "img": ".entry-content p a img"
+    },
+    "http://hyvelbenk.wordpress.com/": {
+        "blog": ".entry-title a",
+        "img": ".entry-content wp-caption a img"
     }
-
-
 }
