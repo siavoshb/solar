@@ -81,10 +81,6 @@ get '/' do
     if (ShowImageTicker)
         H.page {
             H.p {
-                "New! Get new posts directly in Twitter! <a href='https://twitter.com/woodspotting' class='twitter-follow-button' data-show-count='false' data-size='large>Follow @woodspotting</a>
-<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>"
-            } +
-            H.p {
                 render_gallery_for(news,10,'small')
             } +
             H.h2 {"Top news"}+news_list_to_html(news)
