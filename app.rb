@@ -81,9 +81,8 @@ get '/' do
     if (ShowImageTicker)
         H.page {
             H.p {
-                "<img src='images/mail.png' height='32' width='32'/> Welcome! Woodspotting has been up for a couple months,
-                and I'm looking to make it even better. If you have any thoughts or comments please let me know! 
-                You can email me at <a href='mailto:siavoshb@yahoo.com?Subject=Woodspotting%20Feedback' target='_top'>siavoshb@yahoo.com</a><br><br>"
+                "New! Get new posts directly in Twitter! <a href="https://twitter.com/woodspotting" class="twitter-follow-button" data-show-count="false" data-size="large">Follow @woodspotting</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>"
             } +
             H.p {
                 render_gallery_for(news,10,'small')
