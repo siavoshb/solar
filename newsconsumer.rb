@@ -5,6 +5,7 @@ require 'hiredis'
 require 'redis'
 require 'json'
 require 'uri'
+require 'twitter'
 
 #def increment_user_karma_by(user_id,increment)
 #    userkey = "user:#{user_id}"
@@ -246,6 +247,13 @@ while !addedstory and !news_string.nil?
         if (result.is_a? Integer)
             addedstory = true
             puts "Done! Added " + ntitle + " at " + nurl
+
+            if !BlogSitesJson.index("wood").nil?
+                config = {:consumer_key => "7IWpH3rbIkQt2m3sxBQqRi55m",:consumer_secret => "Pgut1Vd00OZBTxqfATAKZ5pVq3Fb5dQZlLynMRYGOUFWpfHQzI",:access_token => "2416399058-08Tk1QXYTB36a2qIK0yVs8EeHrRyFjmLue8wfR7",:access_token_secret => "kCYpmNZK8o0k1ArNiuPi1CcOWckKXdvRnEeNxplZrAx3D",}
+                client = Twitter::REST::Client.new(config)
+                client.update(ntitle + " " + nurl)
+            end
+
             break
         else
             addedstory = false

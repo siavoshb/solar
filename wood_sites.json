@@ -588,5 +588,9 @@
     "http://hyvelbenk.wordpress.com/": {
         "blog": ".entry-title a",
         "img": ".entry-content wp-caption a img"
+    },
+    "http://calebjameschairmaker.com/": {
+        "blog": ".entry-title a",
+        "img": ".entry-content a img"
     }
 }
