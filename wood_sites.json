@@ -275,10 +275,6 @@
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
-    "http://stusshed.com/": {
-        "blog": ".post h2 a",
-        "img": ".post .entry-content img"
-    },
     "http://thecornerworkshop.blogspot.com/": {
         "blog": ".post-title a",
         "img": ".post .entry-content img"
