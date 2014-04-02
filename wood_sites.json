@@ -155,10 +155,6 @@
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
-    "http://accidentalwoodworker.blogspot.com/": {
-        "blog": ".entry-title a",
-        "img": ".post .entry-content img"
-    },
     "http://www.blackburntools.com/blog/": {
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
@@ -363,10 +359,6 @@
         "blog": ".title a",
         "img": ".post .entry-content img"
     },
-    "http://confusedwoodworker.wordpress.com/": {
-        "blog": ".post h2 a",
-        "img": ".post .entry-content img"
-    },
     "http://handguitar.wordpress.com/": {
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
@@ -569,10 +561,6 @@
         "blog": ".post-title h1 a",
         "img": ".tiled-gallery-item-large a img"
     },
-    "http://thefurniturerecord.wordpress.com/": {
-        "blog": ".post-title h1 a",
-        "img": ".wp-caption a img"
-    },
     "http://blog.douglasbrooksboatbuilding.com/": {
         "blog": ".post-title a",
         "img": ".post-body a img"
@@ -592,5 +580,13 @@
     "http://calebjameschairmaker.com/": {
         "blog": ".entry-title a",
         "img": ".entry-content a img"
+    },
+    "http://wonderfulwhittlin.blogspot.com/": {
+        "blog": ".entry-title a",
+        "img": ".post-body a img"  
+    },
+    "http://www.thejoinersapprentice.com/": {
+        "blog": ".entry-title a",
+        "img": ".post-body a img"  
     }
 }
