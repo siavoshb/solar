@@ -1,4 +1,5 @@
 require_relative 'app_config'
+
 require 'rubygems'
 require 'hiredis'
 require 'redis'

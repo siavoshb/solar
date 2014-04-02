@@ -1,6 +1,7 @@
 #!/bin/bash
 
-GEM_HOME=/home/siavoshb/.gem/ruby/2.0.0
+#GEM_HOME=/home/siavoshb/.gem/ruby/2.0.0
+export GEM_HOME=/home/siavoshb/.gem/ruby/1.8
 
-/usr/local/bin/ruby2.0 /home/siavoshb/webapps/passenger_app/solar/newsproducer.rb >> /home/siavoshb/logs/user/cron_log_wood_producer.txt
+/usr/local/bin/ruby1.9 /home/siavoshb/webapps/passenger_app/solar/newsproducer.rb >> /home/siavoshb/logs/user/cron_log_wood_producer.txt
 
