@@ -6,6 +6,7 @@ require 'redis'
 require 'json'
 require 'uri'
 require 'twitter'
+require 'bitly'
 
 #def increment_user_karma_by(user_id,increment)
 #    userkey = "user:#{user_id}"
@@ -251,7 +252,11 @@ while !addedstory and !news_string.nil?
             if !BlogSitesJson.index("wood").nil?
                 config = {:consumer_key => "7IWpH3rbIkQt2m3sxBQqRi55m",:consumer_secret => "Pgut1Vd00OZBTxqfATAKZ5pVq3Fb5dQZlLynMRYGOUFWpfHQzI",:access_token => "2416399058-08Tk1QXYTB36a2qIK0yVs8EeHrRyFjmLue8wfR7",:access_token_secret => "kCYpmNZK8o0k1ArNiuPi1CcOWckKXdvRnEeNxplZrAx3D",}
                 client = Twitter::REST::Client.new(config)
-                client.update(ntitle + " " + nurl)
+
+                bitly = Bitly.new('o_5rqm10ee2f', 'R_963be46b907447d1bf651b02b5bb8645')
+                bu = bitly.shorten(nurl)
+
+                client.update(ntitle + " " + bu.short_url)
             end
 
             break
