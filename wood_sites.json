@@ -423,10 +423,6 @@
         "blog": ".blog-entry-title a",
         "img": ".post .entry-content img"
     },
-    "http://uppercutwoodworks.com/uppercut-woodworks-blog/": {
-        "blog": ".entry-title a",
-        "img": ".post .entry-content img"
-    },
     "http://newenglishworkshop.wordpress.com/": {
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
