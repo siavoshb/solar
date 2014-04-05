@@ -67,10 +67,6 @@
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
-    "http://uppercutwoodworks.com/tag/woodworking-blog/": {
-        "blog": ".entry-title a",
-        "img": ".post .entry-content img"
-    },
     "http://toolerable.blogspot.com/": {
         "blog": ".post-title a",
         "img": ".post .entry-content img"
