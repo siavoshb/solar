@@ -115,10 +115,6 @@
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
-    "http://www.chineblog.com/": {
-        "blog": ".post-headline h2 a",
-        "img": ".post .entry-content img"
-    },
     "http://www.popularwoodworking.com/woodworking-blogs/editors-blog": {
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
@@ -196,10 +192,6 @@
         "img": ".post .entry-content img"
     },
     "http://jarrodstonedahl.blogspot.com/": {
-        "blog": ".entry-title a",
-        "img": ".post .entry-content img"
-    },
-    "http://www.blogcht.com/blog/": {
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
