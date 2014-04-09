@@ -247,10 +247,6 @@
         "blog": ".posttitle a",
         "img": ".post .entry-content img"
     },
-    "http://penultimatewoodshop.blogspot.com/": {
-        "blog": ".post-title  a",
-        "img": ".post .entry-content img"
-    },
     "http://www.badgerwoodworks.com/blog/": {
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
