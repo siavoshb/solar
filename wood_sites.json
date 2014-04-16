@@ -572,5 +572,9 @@
     "http://www.thejoinersapprentice.com/": {
         "blog": ".entry-title a",
         "img": ".post-body a img"  
+    },
+    "http://woodenway.wordpress.com/": {
+        "blog": ".entry-title a",
+        "img": ".entry-content a img"  
     }
 }
