@@ -576,5 +576,10 @@
     "http://woodenway.wordpress.com/": {
         "blog": ".entry-title a",
         "img": ".entry-content a img"  
+    },
+    "http://kunimoto.blog.so-net.ne.jp/": {
+        "blog": ".articles-title a",
+        "img": ".needs-a-custom-one"  
     }
+
 }
