@@ -572,6 +572,10 @@
     "http://kunimoto.blog.so-net.ne.jp/": {
         "blog": ".articles-title a",
         "img": ".needs-a-custom-one"  
+    },
+    "http://liferevisited.wordpress.com/": {
+        "blog": ".entry-title a",
+        "img": ".entry-content a img"
     }
 
 }
