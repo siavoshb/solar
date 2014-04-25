@@ -576,6 +576,10 @@
     "http://liferevisited.wordpress.com/": {
         "blog": ".entry-title a",
         "img": ".entry-content a img"
+    },
+    "http://sswantee.wordpress.com/": {
+        "blog": ".entry-title a",
+        "img": ".entry a img"
     }
 
 }
