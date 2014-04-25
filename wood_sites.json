@@ -175,10 +175,6 @@
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
-    "http://mattsbasementworkshop.com/": {
-        "blog": ".post-title a",
-        "img": ".post .entry-content img"
-    },
     "http://www.brianboggschairmakers.com/category/chairmakers_journal/": {
         "blog": ".post-title a",
         "img": ".post .entry-content img"
@@ -392,10 +388,6 @@
         "img": ".post .entry-content img"
     },
     "http://integritywoodworks.wordpress.com/blog/": {
-        "blog": ".entry-title a",
-        "img": ".post .entry-content img"
-    },
-    "http://togetherwewood.wordpress.com/": {
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
