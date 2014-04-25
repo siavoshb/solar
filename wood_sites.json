@@ -580,6 +580,10 @@
     "http://sswantee.wordpress.com/": {
         "blog": ".entry-title a",
         "img": ".entry a img"
+    },
+    "http://workingbyhand.wordpress.com/": {
+        "blog": ".entry-title a",
+        "img": ".entry-content a img"
     }
 
 }
