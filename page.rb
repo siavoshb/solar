@@ -135,8 +135,8 @@ class HTMLGen
         "<!DOCTYPE html>"+
         self.html {
             H.head {
-                self.meta(:name => "description" :content => "Discover and easily track hundreds of the best woodworking blogs")+
-                self.meta(:name => "keywords" :content => "woodworking blogs, hand tools, japanese tools, kanna, hand plane, chisels, furniture making, sharpening stones")+
+                self.meta(:name => "description", :content => "Discover and easily track hundreds of the best woodworking blogs")+
+                self.meta(:name => "keywords", :content => "woodworking blogs, hand tools, japanese tools, kanna, hand plane, chisels, furniture making, sharpening stones")+
                 self.meta(:charset => "utf-8")+
                 self.title{H.entities @title}+
                 self.meta(:content => :index, :name => :robots)+
