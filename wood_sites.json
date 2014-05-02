@@ -584,6 +584,10 @@
     "http://workingbyhand.wordpress.com/": {
         "blog": ".entry-title a",
         "img": ".entry-content a img"
+    },
+    "http://woodandshop.com/blog/": {
+        "blog": ".post-header .title a",
+        "img": ".pibfi_pinterest img"
     }
 
 }
