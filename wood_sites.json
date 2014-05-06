@@ -117,23 +117,23 @@
     },
     "http://www.popularwoodworking.com/woodworking-blogs/editors-blog": {
         "blog": ".entry-title a",
-        "img": ".post .entry-content img"
+        "img": ".post-no-image .entry-content img"
     },
     "http://www.popularwoodworking.com/woodworking-blogs/chris-schwarz-blog": {
         "blog": ".entry-title a",
-        "img": ".post .entry-content img"
+        "img": ".post-no-image .entry-content img"
     },
     "http://www.popularwoodworking.com/woodworking-daily": {
         "blog": ".entry-title a",
-        "img": ".post .entry-content img"
+        "img": ".post-no-image .entry-content img"
     },
     "http://www.popularwoodworking.com/woodworking-blogs/contributors-blog": {
         "blog": ".entry-title a",
-        "img": ".post .entry-content img"
+        "img": ".post-no-image .entry-content img"
     },
     "http://www.popularwoodworking.com/woodworking-blogs/arts-mysteries-blogs/": {
         "blog": ".entry-title a",
-        "img": ".post .entry-content img"
+        "img": ".ppost-no-image .entry-content img"
     },
     "http://www.flyingshavings.co.uk/": {
         "blog": ".entry-title a",
@@ -233,10 +233,6 @@
     },
     "http://www.daedtoolworks.com/blog/": {
         "blog": ".post h2 a",
-        "img": ".post .entry-content img"
-    },
-    "http://cornishworkshop.blogspot.com/": {
-        "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
     "http://blog.woodworkingtooltips.com/": {
