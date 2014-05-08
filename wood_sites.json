@@ -584,6 +584,9 @@
     "http://woodandshop.com/blog/": {
         "blog": ".post-header .title a",
         "img": ".pibfi_pinterest img"
+    },
+    "http://www.workbenchdiary.com/": {
+        "blog": ".post-title a",
+        "img": ".post-body a img"
     }
-
 }
