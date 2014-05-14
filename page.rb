@@ -124,6 +124,12 @@ class HTMLGen
 		  ga('create', 'UA-29097040-2', 'woodspotting.com');
 		    ga('send', 'pageview');
 
+            var trackOutboundLink = function(url) {
+               ga('send', 'event', 'emailshare', 'click', url, {
+                 }
+               });
+            }
+
 		    </script>";
     end
 
