@@ -588,5 +588,9 @@
     "http://www.workbenchdiary.com/": {
         "blog": ".post-title a",
         "img": ".post-body a img"
+    },
+    "http://greg-aroundtheshop.blogspot.com/": {
+        "blog": ".post-title a",
+        "img": ".post-body a img"
     }
 }
