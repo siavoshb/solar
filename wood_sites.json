@@ -592,5 +592,13 @@
     "http://greg-aroundtheshop.blogspot.com/": {
         "blog": ".post-title a",
         "img": ".post-body a img"
+    },
+    "http://timmanneychairmaker.blogspot.com/": {
+        "blog": ".post-title a",
+        "img": ".post-body a img"
+    },
+    "http://rundellandrundell.blogspot.com.au/": {
+        "blog": ".post-title a",
+        "img": ".post-body a img"
     }
 }
