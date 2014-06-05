@@ -151,10 +151,6 @@
         "blog": ".thelink p a",
         "img": ".post .entry-content img"
     },
-    "http://wisdomofhands.blogspot.com/": {
-        "blog": ".entry-title a",
-        "img": ".post .entry-content img"
-    },
     "http://www.blackburntools.com/blog/": {
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
