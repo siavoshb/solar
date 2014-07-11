@@ -49,7 +49,7 @@
     },
     "http://www.renaissancewoodworker.com/blog/": {
         "blog": ".entry-title a",
-        "img": ".post .entry-content img"
+        "img": "p .cboxElement img"
     },
     "http://literaryworkshop.wordpress.com/": {
         "blog": ".entry-title a",
@@ -604,5 +604,13 @@
     "http://www.thejapanblade.com/blog/": {
         "blog": ".entry-title a",
         "img": ".entry-content a img"
+    },
+    "http://www.marymaycarving.com/blog/": {
+        "blog": ".entry-title a",
+        "img": ".rscontent img"
+    },
+    "http://chbecksvoort.wordpress.com/": {
+        "blog": ".entry-title a",
+        "img": ".entry-content p a img"
     }
 }
