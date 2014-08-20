@@ -612,5 +612,13 @@
     "http://chbecksvoort.wordpress.com/": {
         "blog": ".entry-title a",
         "img": ".entry-content p a img"
+    },
+    "http://gregmerritt.wordpress.com/" : {
+        "blog": ".entry-title a",
+        "img": ".entry-content a img"  
+    },
+    "http://www.evenfallstudios.com/woodworks/" : {
+        "blog": ".post .title a",
+        "img": ".entry p img"    
     }
 }
