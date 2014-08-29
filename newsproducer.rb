@@ -61,7 +61,7 @@ def main
 			blog_posts.each do |post_link_html|
 				
 				post_title = post_link_html.text
-				post_url = construct_blog_url(url_string, post_link_html['href'], parameters)
+				post_url = construct_blog_url(url_string, URI.escape(post_link_html['href']), parameters)
 
 				puts "requesting and parsing\t#{post_title} - #{post_url}"
 				post_html = make_http_request(post_url)
