@@ -87,10 +87,6 @@
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
-    "http://stevetomlincrafts.wordpress.com/blog-2/": {
-        "blog": ".entry-title a",
-        "img": ".post .entry-content img"
-    },
     "http://blueoakblog.wordpress.com/": {
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
@@ -152,10 +148,6 @@
         "img": ".post .entry-content img"
     },
     "http://www.blackburntools.com/blog/": {
-        "blog": ".entry-title a",
-        "img": ".post .entry-content img"
-    },
-    "http://pegsandtails.wordpress.com/": {
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
@@ -229,7 +221,7 @@
     },
     "http://www.daedtoolworks.com/blog/": {
         "blog": ".post h2 a",
-        "img": ".post .entry-content img"
+        "img": ".post .post-content img"
     },
     "http://blog.woodworkingtooltips.com/": {
         "blog": ".posttitle a",
@@ -620,5 +612,9 @@
     "http://www.evenfallstudios.com/woodworks/" : {
         "blog": ".post .title a",
         "img": ".entry p img"    
+    },
+    "http://calebjameschairmaker.com/" : {
+        "blog": ".blogmain h1 a",
+        "img": ".blogmain .blog_JOEL img"    
     }
 }
