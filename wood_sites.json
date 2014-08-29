@@ -263,11 +263,11 @@
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
-    "http://www.toolsforworkingwood.com/store//store/blog/joel": {
+    "http://www.toolsforworkingwood.com/store//store/blog/joel/": {
         "blog": "td h1 a",
         "img": ".post .entry-content img"
     },
-    "http://www.toolsforworkingwood.com/store//store/blog/work": {
+    "http://www.toolsforworkingwood.com/store//store/blog/work/": {
         "blog": "td h1 a",
         "img": ".post .entry-content img"
     },
@@ -614,7 +614,7 @@
         "img": ".entry p img"    
     },
     "http://calebjameschairmaker.com/" : {
-        "blog": ".blogmain h1 a",
-        "img": ".blogmain .blog_JOEL img"    
+        "blog": ".post-title a",
+        "img": "tbody a img"    
     }
 }
