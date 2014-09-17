@@ -565,10 +565,6 @@
         "blog": ".entry-title a",
         "img": ".entry a img"
     },
-    "http://workingbyhand.wordpress.com/": {
-        "blog": ".entry-title a",
-        "img": ".entry-content a img"
-    },
     "http://woodandshop.com/blog/": {
         "blog": ".post-header .title a",
         "img": ".pibfi_pinterest img"
@@ -616,5 +612,14 @@
     "http://calebjameschairmaker.com/" : {
         "blog": ".post-title a",
         "img": "tbody a img"    
+    },
+    "http://www.macica.com/blog.html/" : {
+        "blog": ".contentheading a",
+        "img": ".maincontent tbody p img"    
+    },
+    "http://www.brianboggschairmakers.com/category/blog/" : {
+        "blog": ".post-entry .post-title a",
+        "img": ".entry-content a img"    
     }
+
 }
