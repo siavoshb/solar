@@ -616,10 +616,5 @@
     "http://www.macica.com/blog.html/" : {
         "blog": ".contentheading a",
         "img": ".maincontent tbody p img"    
-    },
-    "http://www.brianboggschairmakers.com/category/blog/" : {
-        "blog": ".post-entry .post-title a",
-        "img": ".entry-content a img"    
     }
-
 }
