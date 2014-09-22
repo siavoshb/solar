@@ -616,5 +616,9 @@
     "http://www.macica.com/blog.html/" : {
         "blog": ".contentheading a",
         "img": ".maincontent tbody p img"    
+    },
+    "http://logancabinetshoppe.wordpress.com/" : {
+        "blog": ".entry-title a",
+        "img": ".entry-content img"    
     }
 }
