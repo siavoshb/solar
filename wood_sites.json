@@ -617,8 +617,12 @@
         "blog": ".entry-title a",
         "img": ".entry-content img"    
     },
-     "http://www.minimalistwoodworker.com//" : {
+    "http://www.minimalistwoodworker.com/" : {
         "blog": ".post-title a",
         "img": ".image-block-wrapper img"    
+    },
+    "http://laborlimaetoolworks.blogspot.com/" : {
+        "blog": ".post-title a",
+        "img": ".entry-content a img"    
     }
 }
