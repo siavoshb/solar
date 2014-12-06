@@ -628,5 +628,9 @@
     "http://360woodworking.com/category/360-blog/" : {
         "blog": ".entry-title a",
         "img": ".entry-content a img"    
+    },
+    "http://blackdogswoodshop.blogspot.com/" : {
+        "blog": ".entry-title a",
+        "img": ".entry-content a img"    
     }
 }
