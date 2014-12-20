@@ -122,6 +122,7 @@ class HTMLGen
                 })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
                 ga('create', 'UA-29097040-2', 'woodspotting.com');
+		ga('require', 'displayfeatures');
                 ga('send', 'pageview');
 
         </script>";
