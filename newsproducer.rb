@@ -7,6 +7,7 @@ require 'json'
 require 'uri'
 require 'net/http'
 require 'nokogiri'
+require "open-uri"
 
 def setup_redis(uri=RedisURL)
 	uri = URI.parse(uri)
@@ -18,13 +19,7 @@ def load_user_json( filename )
 end
 
 def make_http_request( url_string )
-	url = URI.parse(url_string)
-	req = Net::HTTP::Get.new(url.path)
-	res = Net::HTTP.start(url.host, url.port) {|http|
-		http.request(req)
-	}
-	
-	res.body
+	URI.parse(url_string).read
 end
 
 def construct_blog_url(url_string, post_url, parameters)
