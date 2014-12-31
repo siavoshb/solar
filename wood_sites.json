@@ -75,9 +75,9 @@
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
-    "http://dblaney.wordpress.com/": {
+    "https://dblaney.wordpress.com/": {
         "blog": ".post h2 a",
-        "img": ".post .entry-content img"
+        "img": ".entrytext img"
     },
     "http://mcglynnonmaking.wordpress.com/": {
         "blog": ".entry-title a",
