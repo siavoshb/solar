@@ -216,8 +216,8 @@
         "img": ".post .entry-content img"
     },
     "http://www.daedtoolworks.com/blog/": {
-        "blog": ".post h2 a",
-        "img": ".post .post-content img"
+        "blog": ".entry-title a",
+        "img": ".entry-content img"
     },
     "http://blog.woodworkingtooltips.com/": {
         "blog": ".posttitle a",
@@ -632,5 +632,9 @@
     "http://blackdogswoodshop.blogspot.com/" : {
         "blog": ".entry-title a",
         "img": ".entry-content a img"    
+    },
+    "http://sethgould.com/blog/" : {
+        "blog": ".entry-title a",
+        "img": ".entry-content img"    
     }
 }
