@@ -636,5 +636,13 @@
     "http://sethgould.com/blog/" : {
         "blog": ".entry-title a",
         "img": ".entry-content img"    
+    },
+    "https://sethgould.com/blog/" : {
+        "blog": ".entry-content p a",
+        "img": ".wp-caption a img"    
+    },
+    "http://www.txheritage.net/blog/" : {
+        "blog": ".entry-title a",
+        "img": ".entry-content img"    
     }
 }
