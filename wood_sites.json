@@ -41,7 +41,7 @@
     },
     "http://flairwoodworks.com/blog/": {
         "blog": ".entry-title a",
-        "img": ".post .entry-content img"
+        "img": ".entry-content img"
     },
     "http://www.renaissancewoodworker.com/blog/": {
         "blog": ".entry-title a",
@@ -71,9 +71,9 @@
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
-    "http://alaskawoodworker.wordpress.com/": {
+    "http://www.alaskawoodworker.com/": {
         "blog": ".entry-title a",
-        "img": ".post .entry-content img"
+        "img": ".entry-content img"
     },
     "https://dblaney.wordpress.com/": {
         "blog": "#content .post h2 a",
@@ -88,10 +88,6 @@
         "img": ".post .entry-content img"
     },
     "http://musingsfrombigpink.blogspot.com/": {
-        "blog": ".entry-title a",
-        "img": ".post .entry-content img"
-    },
-    "http://licensed2tinker.blogspot.com/": {
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
@@ -145,7 +141,7 @@
     },
     "http://www.blackburntools.com/blog/": {
         "blog": ".entry-title a",
-        "img": ".post .entry-content img"
+        "img": ".entry-content img"
     },
     "http://bowsaw.wordpress.com/": {
         "blog": ".entry-title a",
@@ -155,9 +151,9 @@
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
-    "http://georgewalkerdesign.wordpress.com/": {
+    "https://georgewalkerdesign.wordpress.com/": {
         "blog": ".entry-title a",
-        "img": ".post .entry-content img"
+        "img": ".entry-content img"
     },
     "http://www.brianboggschairmakers.com/category/chairmakers_journal/": {
         "blog": ".post-title a",
@@ -185,10 +181,6 @@
     },
     "http://www.floweringelbow.org/": {
         "blog": ".post h1 a",
-        "img": ".post .entry-content img"
-    },
-    "http://jeffbranch.wordpress.com/blog/": {
-        "blog": ".title a",
         "img": ".post .entry-content img"
     },
     "http://zkprojectnotebook.wordpress.com/": {
@@ -255,10 +247,6 @@
         "blog": ".storytitle a",
         "img": ".post .entry-content img"
     },
-    "http://logancabinetshoppe.com/blog/": {
-        "blog": ".entry-title a",
-        "img": ".post .entry-content img"
-    },
     "http://www.toolsforworkingwood.com/store//store/blog/joel/": {
         "blog": "td h1 a",
         "img": ".post .entry-content img"
@@ -281,7 +269,7 @@
     },
     "http://nelsonwoodcraft.blogspot.com/": {
         "blog": ".post-title a",
-        "img": ".post .entry-content img"
+        "img": ".entry-content img"
     },
     "http://nabilabdo.blogspot.com/": {
         "blog": ".post-title a",
@@ -295,29 +283,25 @@
         "blog": ".post h2 a",
         "img": ".post .entry-content img"
     },
-    "http://thesawblog.com/": {
+    "https://rainfordrestorations.wordpress.com/": {
         "blog": ".entry-title a",
-        "img": ".post .entry-content img"
-    },
-    "http://rainfordrestorations.wordpress.com/": {
-        "blog": ".entry-title a",
-        "img": ".post .entry-content img"
+        "img": ".entry-content img"
     },
     "http://frontiercarpenter.blogspot.com/": {
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
-    "http://leelairdwoodworking.blogspot.com/": {
-        "blog": ".post-title a",
-        "img": ".post .entry-content img"
+    "http://leelairdwoodworking.com/": {
+        "blog": "post a",
+        "img": ".wp-caption img"
     },
     "http://dennisyoung-kagu.blogspot.com/": {
         "blog": ".post-title a",
         "img": ".post .entry-content img"
     },
-    "http://fabulalignarius.wordpress.com/": {
+    "https://fabulalignarius.wordpress.com/": {
         "blog": ".entry-title a",
-        "img": ".post .entry-content img"
+        "img": ".entry-content img"
     },
     "http://www.robin-wood.co.uk/wood-craft-blog/": {
         "blog": ".title a",
@@ -331,7 +315,7 @@
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
-    "http://astriddegroot.wordpress.com/": {
+    "https://astriddegroot.wordpress.com/": {
         "blog": ".post h1 a",
         "img": ".post .entry-content img"
     },
@@ -339,19 +323,19 @@
         "blog": ".post h1 a",
         "img": ".post .entry-content img"
     },
-    "http://mvflaim.wordpress.com/": {
-        "blog": ".post-title h1 a",
-        "img": ".post .entry-content img"
+    "https://mvflaim.wordpress.com/": {
+        "blog": ".post-title a",
+        "img": ".post-entry img"
     },
-    "http://millcrek.wordpress.com/": {
+    "https://millcrek.wordpress.com/": {
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
-    "http://npcarey.wordpress.com/category/ukulele/": {
+    "https://npcarey.wordpress.com/category/ukulele/": {
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
-    "http://timetestedtools.wordpress.com/": {
+    "https://timetestedtools.wordpress.com/": {
         "blog": ".entry h2 a",
         "img": ".post .entry-content img"
     },
@@ -359,7 +343,7 @@
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
-    "http://homegrownlutherie.wordpress.com/": {
+    "https://homegrownlutherie.wordpress.com/": {
         "blog": ".post-title h1 a",
         "img": ".post .entry-content img"
     },
@@ -367,31 +351,24 @@
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
-    "http://integritywoodworks.wordpress.com/blog/": {
+    "https://integritywoodworks.wordpress.com/blog/": {
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
-    "http://northsummitblog.wordpress.com/": {
-        "blog": ".entry-title a",
-        "img": ".post .entry-content img"
-    },
-    "http://planeshavings.blogspot.com/": {
-        "blog": ".entry-title a",
-        "img": ".post .entry-content img"
-    },
-    "http://traditionalskills.wordpress.com/": {
+    "https://traditionalskills.wordpress.com/": {
         "blog": ".post-title h1 a",
         "img": ".post .entry-content img"
     },
-    "http://kskdesign.com.au/blog/blog.html/": {
+    "http://www.kskdesign.com.au/blog.html": {
         "blog": ".blog-entry-title a",
-        "img": ".post .entry-content img"
+        "append_custom_url_to_blog_url": "http://www.kskdesign.com.au",
+        "img": ".blog-entry-body img"
     },
     "http://newenglishworkshop.wordpress.com/": {
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
-    "http://northwestwoodworking.wordpress.com/": {
+    "https://northwestwoodworking.wordpress.com/": {
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
@@ -407,9 +384,9 @@
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
-    "http://feeds.feedburner.com/PeonyWoodworks?format=html": {
-        "blog": ".regularitem .itemtitle a",
-        "img": ".post .entry-content img"
+    "http://www.peonywoodworks.com/": {
+        "blog": ".post h4 a",
+        "img": ".photo a img"
     },
     "http://imaokguy.blogspot.com/": {
         "blog": ".entry-title a",
@@ -417,7 +394,7 @@
     },
     "http://www.spooncarvingfirststeps.com/": {
         "blog": ".entry-title a",
-        "img": ".post .entry-content img"
+        "img": ".entry-content img"
     },
     "http://simonhillgreenwoodwork.blogspot.com/": {
         "blog": ".entry-title a",
@@ -428,7 +405,7 @@
     "append_custom_url_to_blog_url": "http://customfurniture.us",
         "img": ".post .entry-content img"
     },
-    "http://skottbenk.wordpress.com/": {
+    "https://skottbenk.wordpress.com/": {
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
@@ -460,13 +437,13 @@
         "blog": ".entry-title a",
         "img": ".post-body a img"
     },
-    "http://axework.wordpress.com/": {
+    "https://axework.wordpress.com/": {
         "blog": ".entry-title a",
         "img": ".entry-content .wp-caption a img"
     },
     "http://axework.wordpress.com/": {
         "blog": ".entry-title a",
-        "img": ".entry-content .wp-caption a img"
+        "img": ".entry-content .wp-caption img"
     },
     "http://www.beautifulwood.co.uk/blog/": {
         "blog": ".journal-entry-text .title a",
@@ -477,7 +454,7 @@
         "blog": ".post h2 a",
         "img": ".entry a img"
     },
-    "http://anthonyhaycabinetmaker.wordpress.com/": {
+    "https://anthonyhaycabinetmaker.wordpress.com/": {
         "blog": ".entry-title a",
         "img": ".entry-content p a img"
     },
@@ -485,11 +462,7 @@
         "blog": ".post-text .title a",
         "append_custom_url_to_blog_url": "http://www.beautifulwood.co.uk"
     },
-    "http://www.bob-easton.com/blog/": {
-        "blog": ".post h2 a",
-        "img": ".entry a img"
-    },
-    "http://anthonyhaycabinetmaker.wordpress.com/": {
+    "https://anthonyhaycabinetmaker.wordpress.com/": {
         "blog": ".entry-title a",
         "img": ".entry-content p a img"
     },
@@ -501,7 +474,7 @@
         "blog": ".post-header h2 a",
         "img": ".post-body a img"
     },
-    "http://joecrafted.wordpress.com/": {
+    "https://joecrafted.wordpress.com/": {
         "blog": ".post-title a",
         "img": ".post-text p a img"
     },
@@ -509,13 +482,9 @@
         "blog": ".post-title a",
         "img": ".entry-content a img"
     },
-    "http://thebenchroom.com/": {
-        "blog": ".entry-title a",
+    "https://trialanderrorwoodworker.wordpress.com/": {
+        "blog": ".entry-header .entry-title a",
         "img": ".entry-content a img"
-    },
-    "http://trialanderrorwoodworker.wordpress.com/": {
-        "blog": ".post-title h1 a",
-        "img": ".tiled-gallery-item-large a img"
     },
     "http://blog.douglasbrooksboatbuilding.com/": {
         "blog": ".post-title a",
@@ -529,7 +498,7 @@
         "blog": ".entry-title a",
         "img": ".entry-content p a img"
     },
-    "http://hyvelbenk.wordpress.com/": {
+    "https://hyvelbenk.wordpress.com/": {
         "blog": ".entry-title a",
         "img": ".entry-content wp-caption a img"
     },
@@ -545,7 +514,7 @@
         "blog": ".entry-title a",
         "img": ".post-body a img"  
     },
-    "http://woodenway.wordpress.com/": {
+    "https://woodenway.wordpress.com/": {
         "blog": ".entry-title a",
         "img": ".entry-content a img"  
     },
@@ -553,11 +522,11 @@
         "blog": ".articles-title a",
         "img": ".needs-a-custom-one"  
     },
-    "http://liferevisited.wordpress.com/": {
+    "https://liferevisited.wordpress.com/": {
         "blog": ".entry-title a",
         "img": ".entry-content a img"
     },
-    "http://sswantee.wordpress.com/": {
+    "https://sswantee.wordpress.com/": {
         "blog": ".entry-title a",
         "img": ".entry a img"
     },
@@ -581,7 +550,7 @@
         "blog": ".post-title a",
         "img": ".post-body a img"
     },
-    "http://overthewireless.wordpress.com/": {
+    "https://overthewireless.wordpress.com/": {
         "blog": ".entry-title a",
         "img": ".entry-content a img"
     },
@@ -593,11 +562,11 @@
         "blog": ".entry-title a",
         "img": ".rscontent img"
     },
-    "http://chbecksvoort.wordpress.com/": {
+    "https://chbecksvoort.wordpress.com/": {
         "blog": ".entry-title a",
         "img": ".entry-content p a img"
     },
-    "http://gregmerritt.wordpress.com/" : {
+    "https://gregmerritt.wordpress.com/" : {
         "blog": ".entry-title a",
         "img": ".entry-content a img"  
     },
@@ -611,9 +580,10 @@
     },
     "http://www.macica.com/blog.html/" : {
         "blog": ".contentheading a",
+        "append_custom_url_to_blog_url": "http://www.macica.com",
         "img": ".maincontent tbody p img"    
     },
-    "http://logancabinetshoppe.wordpress.com/" : {
+    "https://logancabinetshoppe.wordpress.com/" : {
         "blog": ".entry-title a",
         "img": ".entry-content img"    
     },
