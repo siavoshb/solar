@@ -502,10 +502,6 @@
         "blog": ".entry-title a",
         "img": ".entry-content wp-caption a img"
     },
-    "http://www.kapeldesigns.blogspot.com": {
-        "blog": ".entry-title a",
-        "img": ".entry-content a img"
-    },
     "http://wonderfulwhittlin.blogspot.com/": {
         "blog": ".entry-title a",
         "img": ".post-body a img"  
