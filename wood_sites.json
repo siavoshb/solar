@@ -606,5 +606,9 @@
     "http://insidetheworkshop.blogspot.com/" : {
         "blog": ".entry-title a",
         "img": ".entry-content a img"
+    },
+    "http://insidetheworkshop.blogspot.com/" : {
+        "blog": ".entry-title a",
+        "img": ".entry-content a img"
     }
 }
