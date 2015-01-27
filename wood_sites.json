@@ -610,5 +610,13 @@
     "http://dorsetcustomfurniture.blogspot.com/" : {
         "blog": ".entry-title a",
         "img": ".entry-content a img"
+    },
+    "https://muebleshayabusa.wordpress.com/anatomia-del-mueble/" : {
+        "blog": ".post-info h1 a",
+        "img": ".post-content p img"
+    },
+    "https://djofurnituremaker.wordpress.com/" : {
+        "blog": ".entrytitle h2 a",
+        "img": ".entrybody p a img"
     }
 }
