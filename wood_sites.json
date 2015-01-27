@@ -31,7 +31,7 @@
         "blog": ".post-title a",
         "img": ".post .entry-content img"
     },
-    "http://pfollansbee.wordpress.com/": {
+    "https://pfollansbee.wordpress.com/": {
         "blog": ".post-title a",
         "img": ".post .post-content img"
     },
