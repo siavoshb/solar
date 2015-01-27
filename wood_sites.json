@@ -123,6 +123,10 @@
         "blog": ".entry-title a",
         "img": ".ppost-no-image .entry-content img"
     },
+    "http://www.popularwoodworking.com/tools/": {
+        "blog": ".entry-title a",
+        "img": ".ppost-no-image .entry-content img"
+    },
     "http://www.flyingshavings.co.uk/": {
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
