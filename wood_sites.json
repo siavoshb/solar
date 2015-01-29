@@ -59,9 +59,9 @@
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
-    "http://brokenriverjoinery.wordpress.com/": {
+    "https://brokenriverjoinery.wordpress.com/": {
         "blog": ".entry-title a",
-        "img": ".post .entry-content img"
+        "img": ".entry-content p a img"
     },
     "http://toolerable.blogspot.com/": {
         "blog": ".post-title a",
@@ -83,7 +83,7 @@
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
-    "http://blueoakblog.wordpress.com/": {
+    "https://blueoakblog.wordpress.com/": {
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
@@ -95,7 +95,7 @@
         "blog": ".post h2 a",
         "img": ".post .entry-content img"
     },
-    "http://handtooljourney.wordpress.com/": {
+    "https://handtooljourney.wordpress.com/": {
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
@@ -147,7 +147,7 @@
         "blog": ".entry-title a",
         "img": ".entry-content img"
     },
-    "http://bowsaw.wordpress.com/": {
+    "https://bowsaw.wordpress.com/": {
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
