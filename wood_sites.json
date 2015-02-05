@@ -628,9 +628,8 @@
         "img": ".entry-content p a img"
     },
     "http://www.minimalistwoodworker.com/" : {
-        "blog": "..post-title a",
+        "blog": ".post-title a",
         "append_base_url_to_blog_url": true,
         "img": ".image-block-wrapper img"
-    },
-
+    }
 }
