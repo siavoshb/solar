@@ -622,5 +622,9 @@
     "https://djofurnituremaker.wordpress.com/" : {
         "blog": ".entrytitle h2 a",
         "img": ".entrybody p a img"
+    },
+    "http://www.jenesaisquoiwoodworking.com/blog/" : {
+        "blog": ".widget_recent_entries li a",
+        "img": ".entry-content p a img"
     }
 }
