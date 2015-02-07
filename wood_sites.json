@@ -631,5 +631,13 @@
         "blog": ".post-title a",
         "append_base_url_to_blog_url": true,
         "img": ".xxxxxxxx"
+    },
+    "https://jeffbranch.wordpress.com/" : {
+        "blog": ".entry-title a",
+        "img": ".wp-caption a img"
+    },
+    "http://theapartmentwoodworker.com/" : {
+        "blog": ".content-area .post a",
+        "img": ".wp-caption a img"
     }
 }
