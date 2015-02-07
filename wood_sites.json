@@ -639,5 +639,13 @@
     "http://theapartmentwoodworker.com/" : {
         "blog": ".content-area .post a",
         "img": ".wp-caption a img"
+    },
+    "https://southernnightswoodwork.wordpress.com/" : {
+        "blog": ".entry-title a",
+        "img": ".entry-header img"
+    },
+    "https://wesleyworkswithwood.wordpress.com/posts/" : {
+        "blog": ".entry-title a",
+        "img": ".entry-content a img"
     }
 }
