@@ -47,7 +47,7 @@
         "blog": ".entry-title a",
         "img": "p .cboxElement img"
     },
-    "http://literaryworkshop.wordpress.com/": {
+    "https://literaryworkshop.wordpress.com/": {
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
@@ -647,5 +647,9 @@
     "https://wesleyworkswithwood.wordpress.com/posts/" : {
         "blog": ".entry-title a",
         "img": ".entry-content a img"
+    },
+    "https://wilderwoodworking.wordpress.com/" : {
+        "blog": ".entry-title a",
+        "img": ".entry-content p a img"
     }
 }
