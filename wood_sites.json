@@ -651,5 +651,10 @@
     "https://wilderwoodworking.wordpress.com/" : {
         "blog": ".entry-title a",
         "img": ".entry-content p a img"
+    },
+    "https://greenhornworkshop.wordpress.com/" : {
+        "blog": ".entry-title a",
+        "img": ".entry-content p a img"
     }
+
 }
