@@ -655,6 +655,14 @@
     "https://greenhornworkshop.wordpress.com/" : {
         "blog": ".entry-title a",
         "img": ".entry-content p a img"
+    },
+    "http://accidentalwoodworker.blogspot.com/" : {
+        "blog": ".entry-title a",
+        "img": ".entry-content td a img"
+    },
+    "https://shinglemaker.wordpress.com/" : {
+        "blog": ".entry-title a",
+        "img": ".entry-content a img"
     }
 
 }
