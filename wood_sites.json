@@ -190,7 +190,7 @@
     "https://zkprojectnotebook.wordpress.com/": {
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
-    }   
+    },   
     "http://donsbarn.com/musings/": {
         "blog": ".post_title a",
         "img": ".post .entry-content img"
@@ -620,13 +620,9 @@
         "append_base_url_to_blog_url": true,
         "img": ".xxxxxxxx"
     },
-    "https://jeffbranch.wordpress.com/" : {
-        "blog": ".entry-title a",
-        "img": ".wp-caption a img"
-    },
     "http://theapartmentwoodworker.com/" : {
-        "blog": ".content-area .post a",
-        "img": ".wp-caption a img"
+        "blog": ".content-area .status-publish a",
+        "img": ".entry-content .wp-caption a img"
     },
     "https://southernnightswoodwork.wordpress.com/" : {
         "blog": ".entry-title a",
