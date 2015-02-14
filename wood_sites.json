@@ -648,5 +648,4 @@
         "blog": ".entry-title a",
         "img": ".entry-content a img"
     }
-
 }
