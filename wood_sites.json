@@ -562,9 +562,9 @@
         "blog": ".post .title a",
         "img": ".entry p img"    
     },
-    "http://calebjameschairmaker.com/" : {
+    "http://www.kapeldesigns.blogspot.com/" : {
         "blog": ".post-title a",
-        "img": "tbody a img"    
+        "img": ".entry-content a img"    
     },
     "http://www.macica.com/blog.html/" : {
         "blog": ".contentheading a",
