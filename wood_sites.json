@@ -647,5 +647,9 @@
     "https://shinglemaker.wordpress.com/" : {
         "blog": ".entry-title a",
         "img": ".entry-content a img"
+    },
+    "http://www.theyearofmud.com/tag/woodworking/" : {
+        "blog": ".headline_area .entry-title a",
+        "img": ".post .entry-content a img"
     }
 }
