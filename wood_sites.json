@@ -617,7 +617,7 @@
         "img": ".xxxxxxxx"
     },
     "http://theapartmentwoodworker.com/" : {
-        "blog": ".content-area .status-publish a",
+        "blog": ".widget_recent_entries ul li a",
         "img": ".entry-content .wp-caption a img"
     },
     "https://southernnightswoodwork.wordpress.com/" : {
