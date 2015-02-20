@@ -659,5 +659,9 @@
     "https://tasketee.wordpress.com/" : {
         "blog": ".entry-title a",
         "img": ".entry-content a img"
+    },
+    "http://michaellangford.org/" : {
+        "blog": ".entry-title a",
+        "img": ".entry-content a img"
     }
 }
