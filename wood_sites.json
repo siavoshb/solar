@@ -655,5 +655,9 @@
     "http://www.rivingsandshavings.blogspot.com/" : {
         "blog": ".entry-title a",
         "img": ".entry-content a img"
+    },
+    "https://tasketee.wordpress.com/" : {
+        "blog": ".entry-title a",
+        "img": ".entry-content a img"
     }
 }
