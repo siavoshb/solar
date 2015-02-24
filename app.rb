@@ -1735,9 +1735,10 @@ def news_to_html(news,order_num=0)
                     "discuss"
                 end
             }+ " - " +H.a(:href => "mailto:?subject=Woodworking%20post:%20"+news["title"]+"&body=" + news["url"] + "%0D%0A%0D%0A%0D%0AShared from www.woodspotting.com - Discover and follow 100s of woodworking blogs") { "<span style='color:#3366FF;'>email</span>"} +
-            #if $user and user_is_admin?($user)
-                " - "+H.a(:href => "/editnews/#{news["id"]}") { "edit" }+" - "+H.a(:href => "http://twitter.com/intent/tweet?url=#{SiteUrl}/news/#{news["id"]}&text="+URI.encode(news["title"])+" - ") { "tweet" } 
-            #else "" end
+            " - "+H.a(:href => "http://twitter.com/intent/tweet?url=#{SiteUrl}/news/#{news["id"]}&text="+URI.encode(news["title"])+" - ") { "tweet" }  +
+            if $user and user_is_admin?($user)
+                " - "+H.a(:href => "/editnews/#{news["id"]}") { "edit" }
+            else "" end
         }+
         if params and params[:debug] and $user and user_is_admin?($user)
             "id: "+news["id"].to_s+" "+
