@@ -562,11 +562,6 @@
         "blog": ".post-title a",
         "img": ".entry-content a img"    
     },
-    "http://www.macica.com/blog.html/" : {
-        "blog": ".contentheading a",
-        "append_custom_url_to_blog_url": "http://www.macica.com",
-        "img": ".maincontent tbody p img"    
-    },
     "https://logancabinetshoppe.wordpress.com/" : {
         "blog": ".entry-title a",
         "img": ".entry-content img"    
