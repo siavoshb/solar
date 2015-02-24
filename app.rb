@@ -1685,11 +1685,14 @@ def news_to_html(news,order_num=0)
     news["url"] = "/news/#{news["id"]}" if !domain
     upclass = "uparrow"
     downclass = "downarrow"
-    if news["voted"] == :up
+    if $user and user_is_admin?($user) and news["voted"] == :up 
         upclass << " voted"
         downclass << " disabled"
-    elsif news["voted"] == :down
+    elsif $user and user_is_admin?($user) and news["voted"] == :down
         downclass << " voted"
+        upclass << " disabled"
+    else
+        downclass << " disabled"
         upclass << " disabled"
     end
 
@@ -2022,11 +2025,14 @@ def comment_to_html(c,u,show_parent = false)
             if !c['topcomment']
                 upclass = "uparrow"
                 downclass = "downarrow"
-                if $user and c['up'] and c['up'].index($user['id'].to_i)
+                if $user and user_is_admin?($user) and c['up'] and c['up'].index($user['id'].to_i)
                     upclass << " voted"
                     downclass << " disabled"
-                elsif $user and c['down'] and c['down'].index($user['id'].to_i)
+                elsif $user and user_is_admin?($user) and c['down'] and c['down'].index($user['id'].to_i)
                     downclass << " voted"
+                    upclass << " disabled"
+                else
+                    downclass << " disabled"
                     upclass << " disabled"
                 end
                 "#{score} point"+"#{'s' if score.to_i.abs>1}"+" "+
