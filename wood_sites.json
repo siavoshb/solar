@@ -32,8 +32,8 @@
         "img": ".post .entry-content img"
     },
     "https://pfollansbee.wordpress.com/": {
-        "blog": ".post-title a",
-        "img": ".post .post-content img"
+        "blog": ".entry-title a",
+        "img": ".entry-content a img"
     },
     "http://dougberch.com/blog/": {
         "blog": ".entry-title a",
