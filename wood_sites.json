@@ -79,7 +79,7 @@
         "blog": "#content .post h2 a",
         "img": ".entrytext a img"
     },
-    "http://mcglynnonmaking.wordpress.com/": {
+    "http://mcglynnonmaking.com/": {
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
@@ -137,10 +137,6 @@
     },
     "http://oregonwoodworker.blogspot.com/": {
         "blog": ".entry-title a",
-        "img": ".post .entry-content img"
-    },
-    "http://giantcypress.net/": {
-        "blog": ".thelink p a",
         "img": ".post .entry-content img"
     },
     "http://www.blackburntools.com/blog/": {
@@ -550,7 +546,7 @@
         "blog": ".entry-title a",
         "img": ".entry-content p a img"
     },
-    "https://gregmerritt.wordpress.com/" : {
+    "http://hillbillydaiku.com/" : {
         "blog": ".entry-title a",
         "img": ".entry-content a img"  
     },
@@ -590,10 +586,6 @@
         "blog": ".entry-title a",
         "img": ".entry-content a img"
     },
-    "http://dorsetcustomfurniture.blogspot.com/" : {
-        "blog": ".entry-title a",
-        "img": ".entry-content a img"
-    },
     "https://muebleshayabusa.wordpress.com/anatomia-del-mueble/" : {
         "blog": ".post-info h1 a",
         "img": ".post-content p img"
@@ -630,10 +622,6 @@
     "https://greenhornworkshop.wordpress.com/" : {
         "blog": ".entry-title a",
         "img": ".entry-content p a img"
-    },
-    "http://accidentalwoodworker.blogspot.com/" : {
-        "blog": ".entry-title a",
-        "img": ".entry-content td a img"
     },
     "https://shinglemaker.wordpress.com/" : {
         "blog": ".entry-title a",
