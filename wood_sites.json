@@ -421,14 +421,6 @@
         "blog": ".entry-title a",
         "img": ".post-body a img"
     },
-    "https://axework.wordpress.com/": {
-        "blog": ".entry-title a",
-        "img": ".entry-content .wp-caption a img"
-    },
-    "https://axework.wordpress.com/": {
-        "blog": ".entry-title a",
-        "img": ".entry-content .wp-caption img"
-    },
     "http://www.beautifulwood.co.uk/blog/": {
         "blog": ".journal-entry-text .title a",
         "append_base_url_to_blog_url": true,
