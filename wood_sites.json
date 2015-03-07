@@ -646,5 +646,9 @@
     "http://michaellangford.org/" : {
         "blog": ".entry-title a",
         "img": ".entry-content a img"
+    }, 
+    "http://paleotool.com/tag/woodworking/" : {
+        "blog": ".entry-title a",
+        "img": ".entry-content a img"
     }
 }
