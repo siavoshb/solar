@@ -3,7 +3,7 @@
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
-    "http://paulsellers.com/woodworking-blog/paul-sellers-blog/": {
+    "https://paulsellers.com/woodworking-blog/paul-sellers-blog/": {
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
@@ -367,10 +367,6 @@
     "http://www.finefurnituremaker.com/news/blog/": {
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
-    },
-    "http://www.peonywoodworks.com/": {
-        "blog": ".post h4 a",
-        "img": ".photo a img"
     },
     "http://imaokguy.blogspot.com/": {
         "blog": ".entry-title a",
