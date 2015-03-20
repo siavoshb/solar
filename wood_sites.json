@@ -640,7 +640,7 @@
         "img": ".entry-content a img"
     }, 
     "http://samonmiya.exblog.jp/" : {
-        "blog": ".MNBODY a",
+        "blog": "tbody .POST_TTL a",
         "img": ".POST_BODY a img"
     }
 }
