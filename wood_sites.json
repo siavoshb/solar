@@ -638,5 +638,9 @@
     "http://paleotool.com/tag/woodworking/" : {
         "blog": ".entry-title a",
         "img": ".entry-content a img"
+    }, 
+    "http://samonmiya.exblog.jp/" : {
+        "blog": ".MNBODY a",
+        "img": ".POST_BODY a img"
     }
 }
