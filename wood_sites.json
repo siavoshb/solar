@@ -642,5 +642,17 @@
     "http://samonmiya.exblog.jp/" : {
         "blog": ".post .POST_TTL a",
         "img": ".POST_BODY a img"
+    }, 
+    "http://twdesignshop.blogspot.com/" : {
+        "blog": ".entry-title a",
+        "img": ".entry-content a img"
+    }, 
+    "http://benchblog.com/" : {
+        "blog": ".entry-title a",
+        "img": ".entry-content a img"
+    }, 
+    "http://breseplane.blogspot.com/" : {
+        "blog": ".entry-title a",
+        "img": ".tr-caption-container a img"
     }
 }
