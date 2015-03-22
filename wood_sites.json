@@ -654,5 +654,9 @@
     "http://breseplane.blogspot.com/" : {
         "blog": ".entry-title a",
         "img": ".tr-caption-container a img"
+    }, 
+    "http://hjerleid.trykker.com/" : {
+        "blog": ".post-title a",
+        "img": ".entry .wp-caption a img"
     }
 }
