@@ -658,5 +658,9 @@
     "http://hjerleid.trykker.com/" : {
         "blog": ".post-title a",
         "img": ".entry .wp-caption a img"
+    }, 
+    "http://solid6q.exblog.jp/" : {
+        "blog": ".POST .POST_TTL a",
+        "img": ".POST_BODY a img"
     }
 }
