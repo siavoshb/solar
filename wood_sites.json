@@ -171,6 +171,10 @@
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
+    "http://woodspirithandcraft.com/blog/": {
+        "blog": ".entry-title a",
+        "img": ".post .entry-content img"
+    },
     "http://davidbarronfurniture.blogspot.co.uk/": {
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
