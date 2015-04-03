@@ -52,8 +52,8 @@
         "img": ".post .entry-content img"
     },
     "http://www.theenglishwoodworker.com/": {
-        "blog": "#headline #h2 a",
-        "img": "#headline .the_content img"
+        "blog": "#latest .spost h2 a",
+        "img": ".the_content a img"
     },
     "http://www.chairnotes.blogspot.com/": {
         "blog": ".entry-title a",
@@ -120,10 +120,6 @@
         "img": ".post-no-image .entry-content img"
     },
     "http://www.popularwoodworking.com/woodworking-blogs/arts-mysteries-blogs/": {
-        "blog": ".entry-title a",
-        "img": ".ppost-no-image .entry-content img"
-    },
-    "http://www.popularwoodworking.com/tools/": {
         "blog": ".entry-title a",
         "img": ".ppost-no-image .entry-content img"
     },
@@ -386,7 +382,7 @@
     },
     "http://customfurniture.us/index.php/furniture-blog/": {
         "blog": ".blog .item h2 a",
-    "append_custom_url_to_blog_url": "http://customfurniture.us",
+        "append_custom_url_to_blog_url": "http://customfurniture.us",
         "img": ".post .entry-content img"
     },
     "https://skottbenk.wordpress.com/": {
@@ -420,11 +416,6 @@
     "http://riversjoinery.blogspot.co.uk/": {
         "blog": ".entry-title a",
         "img": ".post-body a img"
-    },
-    "http://www.beautifulwood.co.uk/blog/": {
-        "blog": ".journal-entry-text .title a",
-        "append_base_url_to_blog_url": true,
-        "img": ".full-image-block img"
     },
     "http://www.bob-easton.com/blog/": {
         "blog": ".post h2 a",
