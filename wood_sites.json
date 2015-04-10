@@ -657,5 +657,9 @@
     "http://solid6q.exblog.jp/" : {
         "blog": ".POST .POST_TTL a",
         "img": ".POST_BODY a img"
+    },
+    "http://www.ticovogt.com/?cat=3" : {
+        "blog": ".post .post-headline a",
+        "img": ".post a img"
     }
 }
