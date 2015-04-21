@@ -661,5 +661,10 @@
     "http://www.ticovogt.com/?cat=3" : {
         "blog": ".post .post-headline a",
         "img": ".post a img"
+    },
+    "http://www.jefflefkowitzchairmaker.com/chairmakers-journal/" : {
+        "blog": ".entry-header .entry-title a",
+        "append_custom_url_to_blog_url": "http://www.jefflefkowitzchairmaker.com",
+        "img": ".image-block-wrapper img"
     }
 }
