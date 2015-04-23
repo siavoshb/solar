@@ -666,5 +666,9 @@
         "blog": ".entry-header .entry-title a",
         "append_custom_url_to_blog_url": "http://www.jefflefkowitzchairmaker.com",
         "img": ".asdfasdfasdfasdfas"
+    },
+    "http://windsorchairsbydan.com/" : {
+        "blog": ".entry-title a",
+        "img": ".entry-content a img"
     }
 }
