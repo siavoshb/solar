@@ -670,5 +670,9 @@
     "http://windsorchairsbydan.com/" : {
         "blog": ".entry-title a",
         "img": ".entry-content a img"
+    },
+    "http://wpatrickedwards.blogspot.ca/" : {
+        "blog": ".entry-title a",
+        "img": ".post-body a img"
     }
 }
