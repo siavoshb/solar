@@ -51,9 +51,9 @@
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
-    "http://www.theenglishwoodworker.com/": {
-        "blog": "#latest .spost h2 a",
-        "img": ".the_content a img"
+    "http://www.theenglishwoodworker.com/?page_id=2593": {
+        "blog": ".entry-content h2 a",
+        "img": ".cb-featured-image img"
     },
     "http://www.chairnotes.blogspot.com/": {
         "blog": ".entry-title a",
