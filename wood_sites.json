@@ -674,5 +674,9 @@
     "http://wpatrickedwards.blogspot.ca/" : {
         "blog": ".entry-title a",
         "img": ".post-body a img"
+    },
+    "http://richard-wile.blogspot.ca/" : {
+        "blog": ".entry-title a",   
+        "img": ".tr-caption-container a img"
     }
 }
