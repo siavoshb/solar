@@ -678,5 +678,9 @@
     "http://richard-wile.blogspot.ca/" : {
         "blog": ".entry-title a",   
         "img": ".tr-caption-container a img"
+    },
+    "https://goatboyswoodshop.wordpress.com/" : {
+        "blog": ".entry-title a",   
+        "img": ".entry-content p img"
     }
 }
