@@ -682,5 +682,14 @@
     "https://goatboyswoodshop.wordpress.com/" : {
         "blog": ".entry-title a",   
         "img": ".entry-content p img"
+    },
+    "http://daikusyokunin.blog.shinobi.jp/" : {
+        "blog": ".EntryTitle a",
+        "append_custom_url_to_blog_url": "http://daikusyokunin.blog.shinobi.jp",
+        "img": ".EntryText img"
+    },
+    "http://blog.goo.ne.jp/0209so1/" : {
+        "blog": ".entry-top h3 a",   
+        "img": ".entry-text-body img"
     }
 }
