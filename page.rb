@@ -127,7 +127,7 @@ class HTMLGen
 
 
         </script>" +
-	"<script src="//load.sumome.com/" data-sumo-site-id="c8dbb8bb51d8217a7212c33f064097b94ee2b904b2d4783ae4cb5828026cec3a" async="async"></script>";
+	"<script src='//load.sumome.com/' data-sumo-site-id='c8dbb8bb51d8217a7212c33f064097b94ee2b904b2d4783ae4cb5828026cec3a' async='async'></script>";
     end
 
     def set_title(t)
