@@ -126,8 +126,7 @@ class HTMLGen
                 ga('send', 'pageview');
 
 
-        </script>" +
-	"<script src='//load.sumome.com/' data-sumo-site-id='eb2dc11299659eb6c819e58ffaf1f12ef09a4d5cc33502c9a0f76015e9d63a2f' async='async'></script>";
+        </script>"
     end
 
     def set_title(t)
