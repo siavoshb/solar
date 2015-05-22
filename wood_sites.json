@@ -691,5 +691,9 @@
     "http://blog.goo.ne.jp/0209so1/" : {
         "blog": ".entry-top h3 a",   
         "img": ".entry-text-body img"
+    },
+    "http://mysaw.com/blog/" : {
+        "blog": ".entry-title a",   
+        "img": ".entry-content a img"
     }
 }
