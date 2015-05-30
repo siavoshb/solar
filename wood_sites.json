@@ -695,5 +695,13 @@
     "http://mysaw.com/blog/" : {
         "blog": ".entry-title a",   
         "img": ".entry-content a img"
+    },
+    "http://www.sustainlife.org/blogs/woodworking/" : {
+        "blog": ".entry-title a",   
+        "img": ".entry a img"
+    },
+    "http://jmawworks.blogspot.com/" : {
+        "blog": ".entry-title a",   
+        "img": ".post-body a img"
     }
 }
