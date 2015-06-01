@@ -703,5 +703,13 @@
     "http://jmawworks.blogspot.com/" : {
         "blog": ".entry-title a",   
         "img": ".post-body a img"
+    },
+    "http://www.tomakeandtobe.com/blog/" : {
+        "blog": ".blog-title a",   
+        "img": ".xxxxxxxx"
+    },
+    "https://davidffisherblog.wordpress.com/" : {
+        "blog": ".entry-title a",   
+        "img": ".entry-content a img"
     }
 }
