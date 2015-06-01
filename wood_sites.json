@@ -711,5 +711,13 @@
     "https://davidffisherblog.wordpress.com/" : {
         "blog": ".entry-title a",   
         "img": ".entry-content a img"
+    },
+    "http://nicwestermann.co.uk/blog/" : {
+        "blog": ".post .title a",   
+        "img": ".entry a img"
+    },
+    "http://granitemountainwoodcraft.com/" : {
+        "blog": ".entry-title a",   
+        "img": ".entry-content p img"
     }
 }
