@@ -103,10 +103,6 @@
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
-    "http://www.popularwoodworking.com/woodworking-blogs/editors-blog": {
-        "blog": ".entry-title a",
-        "img": ".post-no-image .entry-content img"
-    },
     "http://www.popularwoodworking.com/woodworking-blogs/chris-schwarz-blog": {
         "blog": ".entry-title a",
         "img": ".post-no-image .entry-content img"
@@ -118,10 +114,6 @@
     "http://www.popularwoodworking.com/woodworking-blogs/contributors-blog": {
         "blog": ".entry-title a",
         "img": ".post-no-image .entry-content img"
-    },
-    "http://www.popularwoodworking.com/woodworking-blogs/arts-mysteries-blogs/": {
-        "blog": ".entry-title a",
-        "img": ".ppost-no-image .entry-content img"
     },
     "http://www.flyingshavings.co.uk/": {
         "blog": ".entry-title a",
@@ -211,19 +203,11 @@
         "blog": ".entry-title a",
         "img": ".entry-content img"
     },
-    "http://blog.woodworkingtooltips.com/": {
-        "blog": ".posttitle a",
-        "img": ".post .entry-content img"
-    },
     "http://www.badgerwoodworks.com/blog/": {
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
     "https://littlegoodpieces.wordpress.com/": {
-        "blog": ".entry-title a",
-        "img": ".post .entry-content img"
-    },
-    "http://highrockwoodworking.com/": {
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
@@ -241,14 +225,6 @@
     },
     "http://www.fullchisel.com/blog/": {
         "blog": ".storytitle a",
-        "img": ".post .entry-content img"
-    },
-    "http://www.toolsforworkingwood.com/store//store/blog/joel/": {
-        "blog": "td h1 a",
-        "img": ".post .entry-content img"
-    },
-    "http://www.toolsforworkingwood.com/store//store/blog/work/": {
-        "blog": "td h1 a",
         "img": ".post .entry-content img"
     },
     "http://www.cabinwoodworks.com/": {
@@ -551,10 +527,6 @@
     },
     "http://laborlimaetoolworks.blogspot.com/" : {
         "blog": ".post-title a",
-        "img": ".entry-content a img"    
-    },
-    "http://360woodworking.com/category/360-blog/" : {
-        "blog": ".entry-title a",
         "img": ".entry-content a img"    
     },
     "http://blackdogswoodshop.blogspot.com/" : {
