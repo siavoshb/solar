@@ -143,10 +143,6 @@
         "blog": ".entry-title a",
         "img": ".entry-content img"
     },
-    "http://www.brianboggschairmakers.com/category/chairmakers_journal/": {
-        "blog": ".post-title a",
-        "img": ".post .entry-content img"
-    },
     "http://theparttimewoodworker.blogspot.com/": {
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
@@ -161,6 +157,7 @@
     },
     "http://woodspirithandcraft.com/blog/": {
         "blog": ".entry-title a",
+        "append_custom_url_to_blog_url": "http://woodspirithandcraft.com",
         "img": ".post .entry-content img"
     },
     "http://davidbarronfurniture.blogspot.co.uk/": {
@@ -211,10 +208,6 @@
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
-    "http://sandal-woodsblog.com/": {
-        "blog": ".entry-title a",
-        "img": ".post .entry-content img"
-    },
     "http://thecornerworkshop.blogspot.com/": {
         "blog": ".post-title a",
         "img": ".post .entry-content img"
@@ -225,10 +218,6 @@
     },
     "http://www.fullchisel.com/blog/": {
         "blog": ".storytitle a",
-        "img": ".post .entry-content img"
-    },
-    "http://www.cabinwoodworks.com/": {
-        "blog": ".post h2 a",
         "img": ".post .entry-content img"
     },
     "http://beavesbench.com/": {
