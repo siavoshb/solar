@@ -663,5 +663,13 @@
     "http://granitemountainwoodcraft.com/" : {
         "blog": ".entry-title a",   
         "img": ".entry-content p img"
+    },
+    "https://fairwoodworking.wordpress.com/" : {
+        "blog": ".storytitle a",   
+        "img": ".storycontent p img"
+    },
+    "https://thedailyskep.wordpress.com/" : {
+        "blog": ".entry-title a",   
+        "img": ".entry-content p img"
     }
 }
