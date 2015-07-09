@@ -251,7 +251,7 @@
         "blog": ".post h2 a",
         "img": ".post .entry-content img"
     },
-    "https://rainfordrestorations.wordpress.com/": {
+    "http://rainfordrestorations.com/blog/": {
         "blog": ".entry-title a",
         "img": ".entry-content img"
     },
@@ -270,10 +270,6 @@
     "https://fabulalignarius.wordpress.com/": {
         "blog": ".entry-title a",
         "img": ".entry-content img"
-    },
-    "https://handguitar.wordpress.com/": {
-        "blog": ".entry-title a",
-        "img": ".post .entry-content img"
     },
     "https://zerofret.wordpress.com/": {
         "blog": ".entry-title a",
@@ -457,10 +453,6 @@
         "blog": ".entry-title a",
         "img": ".entry-content a img"  
     },
-    "http://kunimoto.blog.so-net.ne.jp/": {
-        "blog": ".articles-title a",
-        "img": ".needs-a-custom-one"  
-    },
     "https://liferevisited.wordpress.com/": {
         "blog": ".entry-title a",
         "img": ".entry-content a img"
@@ -470,7 +462,7 @@
         "img": ".entry a img"
     },
     "http://woodandshop.com/blog/": {
-        "blog": ".post-content .post-title a",
+        "blog": ".entry-title a",
         "img": ".post-content a img"
     },
     "http://www.workbenchdiary.com/": {
@@ -516,10 +508,6 @@
     "http://www.kapeldesigns.blogspot.com/" : {
         "blog": ".post-title a",
         "img": ".entry-content a img"    
-    },
-    "https://logancabinetshoppe.wordpress.com/" : {
-        "blog": ".entry-title a",
-        "img": ".entry-content img"    
     },
     "http://www.minimalistwoodworker.com/" : {
         "blog": ".post-title a",
@@ -654,11 +642,6 @@
     "https://goatboyswoodshop.wordpress.com/" : {
         "blog": ".entry-title a",   
         "img": ".entry-content p img"
-    },
-    "http://daikusyokunin.blog.shinobi.jp/" : {
-        "blog": ".EntryTitle a",
-        "append_custom_url_to_blog_url": "http://daikusyokunin.blog.shinobi.jp",
-        "img": ".EntryText img"
     },
     "http://blog.goo.ne.jp/0209so1/" : {
         "blog": ".entry-top h3 a",   
