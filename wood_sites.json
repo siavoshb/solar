@@ -671,5 +671,9 @@
     "https://thedailyskep.wordpress.com/" : {
         "blog": ".entry-title a",   
         "img": ".entry-content p img"
+    },
+    "http://s-a-w-s.blogspot.com.tr/" : {
+        "blog": ".entry-title a",   
+        "img": "tbody a img"
     }
 }
