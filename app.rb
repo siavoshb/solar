@@ -1068,7 +1068,6 @@ def application_header
                     ["latest","/latest/0"],
                     ["gallery", "/gallery"],
                     ["random","/random"],                    
-                    ["submit","/submit"],
                     ["about", "/about"]]
     navbar = H.nav {
         navitems.map{|ni|
@@ -1085,7 +1084,7 @@ def application_header
                 "logout"
             }
         else
-            H.a(:href => "/login") {"login / register"}
+#            H.a(:href => "/login") {"login / register"}
         end
     }
     menu_mobile = H.a(:href => "#", :id => "link-menu-mobile"){"<~>"}

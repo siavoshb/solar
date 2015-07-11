@@ -66,5 +66,5 @@ MailFrom = "noreply@example.com"
 # news producer and consumer settings
 NewsQueue = "newnewsqueue"
 BlogSitesJson = "/home/siavoshb/webapps/passenger_app/solar/wood_sites.json"
-NumUsers = 13
+NumUsers = 1
 ShowImageTicker = true
