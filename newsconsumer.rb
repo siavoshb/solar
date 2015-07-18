@@ -251,12 +251,8 @@ while !addedstory and !news_string.nil?
 
             if !BlogSitesJson.index("wood").nil?
 #                if rand(3) > 0
-                    config = {:consumer_key => "7IWpH3rbIkQt2m3sxBQqRi55m",:consumer_secret => "Pgut1Vd00OZBTxqfATAKZ5pVq3Fb5dQZlLynMRYGOUFWpfHQzI",:access_token => "2416399058-08Tk1QXYTB36a2qIK0yVs8EeHrRyFjmLue8wfR7",:access_token_secret => "kCYpmNZK8o0k1ArNiuPi1CcOWckKXdvRnEeNxplZrAx3D",}
+                    config = {:consumer_key => "npolONbQ5ZHykTX4p631COeU9",:consumer_secret => "ik6eO8SfMmo6UgD7OKYDa95BR1fjr6dhoXAXR73Q22amsFCjfo",:access_token => "2416399058-uzn5pnNmazOI76jNaFXMoH6dArymjodh7cFYebj",:access_token_secret => "7nU1CMKjTGOuMCXYW79yeowGBlaiTQW2gKaezeinTOped",}
                     client = Twitter::REST::Client.new(config)
-
-                    #Bitly.use_api_version_3
-                    #bitly = Bitly.new('o_5rqm10ee2f', 'R_963be46b907447d1bf651b02b5bb8645')
-                    #bu = bitly.shorten(nurl)
 
                     #client.update("\"" + ntitle + "\" " + bu.short_url)
                     client.update("\"" + ntitle + "\" " + nurl)
