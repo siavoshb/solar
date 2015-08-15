@@ -676,7 +676,7 @@
         "blog": ".entry-title a",   
         "img": "tbody a img"
     },
-    "http://unpluggedwood.blogspot.de" : {
+    "http://unpluggedwood.blogspot.de/" : {
         "blog": ".entry-title a",   
         "img": ".entry-content a img"
     },
