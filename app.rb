@@ -87,6 +87,9 @@ get '/' do
     if (ShowImageTicker)
         H.page {
             H.p {
+		render_ads()
+	    } +
+            H.p {
                 render_gallery_for(news,10,'small')
             } +
             H.h2 {"Top news " + twitterbutton + facebookbutton}+news_list_to_html(news)
@@ -1771,6 +1774,29 @@ def news_list_to_html(news)
             order_num = order_num + 1
         }
         aux
+    }
+end
+
+def render_ads
+    H.section(:id => "sponsors") {
+	"
+	<div>
+		<div style='display: block;margin-bottom:15px;'>
+			<p>*A site message, <a id='toggle' href='#'>show more...</a></p>
+			<div id='smm' style='display:none;padding:7px'>
+Woodspotting is now almost two years old and has been a labor of love for me. I hope to keep the site up indefinitely by making it self-sustaining. I'm looking for a few sponsors to help cover costs. In exchange, I will have a few small text only ad spots available at the top of the page. I imagine the likely sponsors to be small tool makers and online woodworking stores who will benefit from the exposure. If you're interested or think someone will be, please email me for more details at <bold>siavoshb@yahoo.com</bold>
+			</div>	
+		</div>
+	</div>        
+	<script>
+	$( document ).ready(function() {
+		$('#toggle').click(function(ev) { 
+		    $('#smm').toggle(); 
+		    $(this).html(($('#toggle').text() == 'show more...') ? 'show less' : 'show more...');
+		 })
+	});
+	</script>
+	"	
     }
 end
 
