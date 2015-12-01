@@ -683,6 +683,9 @@
     "https://lacasarota.wordpress.com/" : {
         "blog": ".entry-title a",   
         "img": "a img"
+    },
+    "http://bluesprucewoodshop.blogspot.de/" : {
+        "blog": ".entry-title a",   
+        "img": ".entry-content a img"
     }
-
 }
