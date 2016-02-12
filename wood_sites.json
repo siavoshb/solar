@@ -691,5 +691,9 @@
     "https://journeymansjournel.wordpress.com/" : {
         "blog": ".entry-title a",   
         "img": ".entry-content p img"
+    },
+    "https://brianholcombewoodworkerblog.wordpress.com/" : {
+        "blog": ".post-title a",
+        "img": ".post-entry img"
     }
 }
