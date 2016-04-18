@@ -8,8 +8,8 @@
         "img": ".post .entry-content img"
     },
     "http://blog.lostartpress.com/": {
-        "blog": ".post .entry-title a",
-        "img": ".post .entry-content img"
+        "blog": ".entry-title a",
+        "img": ".entry-content img"
     },
     "http://benchcrafted.blogspot.com/": {
         "blog": ".post-title a",
