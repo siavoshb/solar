@@ -7,7 +7,7 @@
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
-    "http://blog.lostartpress.com/": {
+    "https://blog.lostartpress.com/": {
         "blog": ".entry-title a",
         "img": ".entry-content img"
     },
@@ -39,7 +39,7 @@
         "blog": ".entry-title a",
         "img": ".zzzzzzzz"
     },
-    "http://flairwoodworks.com/blog/": {
+    "https://flairwoodworks.com/blog/": {
         "blog": ".entry-title a",
         "img": ".entry-content img"
     },
@@ -91,7 +91,7 @@
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
-    "http://sheworkswood.com/": {
+    "https://sheworkswood.com/": {
         "blog": ".post h2 a",
         "img": ".post .entry-content img"
     },
@@ -147,11 +147,7 @@
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
-    "http://stuartblanchard.com/blogpage/": {
-        "blog": ".entry-title a",
-        "img": ".post .entry-content img"
-    },
-    "http://jarrodstonedahl.blogspot.com/": {
+    "https://stuartblanchard.com/blogpage/": {
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
@@ -220,10 +216,6 @@
         "blog": ".storytitle a",
         "img": ".post .entry-content img"
     },
-    "http://beavesbench.com/": {
-        "blog": ".post-title a",
-        "img": ".post .entry-content img"
-    },
     "http://nelsonwoodcraft.blogspot.com/": {
         "blog": ".post-title a",
         "img": ".entry-content img"
@@ -240,7 +232,7 @@
         "blog": ".post h2 a",
         "img": ".post .entry-content img"
     },
-    "http://rainfordrestorations.com/blog/": {
+    "https://rainfordrestorations.com/blog/": {
         "blog": ".entry-title a",
         "img": ".entry-content img"
     },
@@ -268,7 +260,7 @@
         "blog": ".post h1 a",
         "img": ".post .entry-content img"
     },
-    "http://theschoolofthetransferofenergy.com/": {
+    "https://theschoolofthetransferofenergy.com/": {
         "blog": ".post h1 a",
         "img": ".post .entry-content img"
     },
@@ -288,16 +280,12 @@
         "blog": ".entry h2 a",
         "img": ".post .entry-content img"
     },
-    "http://thebutlerdiditwoodworks.com/": {
+    "https://thebutlerdiditwoodworks.com/": {
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
     "https://homegrownlutherie.wordpress.com/": {
         "blog": ".post-title h1 a",
-        "img": ".post .entry-content img"
-    },
-    "http://timewarptoolworks.com/category/from-the-workshop/": {
-        "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
     "https://integritywoodworks.wordpress.com/blog/": {
@@ -319,10 +307,6 @@
     },
     "https://northwestwoodworking.wordpress.com/": {
         "blog": ".entry-title a",
-        "img": ".post .entry-content img"
-    },
-    "http://thefamelesswoodworker.com/": {
-        "blog": ".post-title h1 a",
         "img": ".post .entry-content img"
     },
     "http://www.finefurnituremaker.com/news/blog/": {
@@ -386,20 +370,12 @@
         "blog": ".entry-title a",
         "img": ".entry-content p a img"
     },
-    "http://www.beautifulwood.co.uk/blog/": {
-        "blog": ".post-text .title a",
-        "append_custom_url_to_blog_url": "http://www.beautifulwood.co.uk"
-    },
     "https://anthonyhaycabinetmaker.wordpress.com/": {
         "blog": ".entry-title a",
         "img": ".entry-content p a img"
     },
     "http://www.eatoncountywoodworker.blogspot.com/" : {
         "blog": ".entry-title a",
-        "img": ".post-body a img"
-    },
-    "http://thekiltedwoodworker.com/" : {
-        "blog": ".post-header h2 a",
         "img": ".post-body a img"
     },
     "https://joecrafted.wordpress.com/": {
@@ -470,7 +446,7 @@
         "blog": ".post-title a",
         "img": ".post-body a img"
     },
-    "https://overthewireless.wordpress.com/": {
+    "https://overthewireless.com/": {
         "blog": ".entry-title a",
         "img": ".entry-content a img"
     },
@@ -486,7 +462,7 @@
         "blog": ".entry-title a",
         "img": ".entry-content p a img"
     },
-    "http://hillbillydaiku.com/" : {
+    "https://hillbillydaiku.com/" : {
         "blog": ".entry-title a",
         "img": ".entry-content a img"  
     },
@@ -535,7 +511,7 @@
         "append_base_url_to_blog_url": true,
         "img": ".xxxxxxxx"
     },
-    "http://theapartmentwoodworker.com/" : {
+    "https://theapartmentwoodworker.com/" : {
         "blog": ".widget_recent_entries ul li a",
         "img": ".entry-content .wp-caption a img"
     },
@@ -575,21 +551,17 @@
         "blog": ".entry-title a",
         "img": ".entry-content a img"
     },
-    "http://michaellangford.org/" : {
+    "https://michaellangford.org/" : {
         "blog": ".entry-title a",
         "img": ".entry-content a img"
     }, 
-    "http://paleotool.com/tag/woodworking/" : {
+    "https://paleotool.com/tag/woodworking/" : {
         "blog": ".entry-title a",
         "img": ".entry-content a img"
     }, 
     "http://samonmiya.exblog.jp/" : {
         "blog": ".post .POST_TTL a",
         "img": ".POST_BODY a img"
-    }, 
-    "http://twdesignshop.blogspot.com/" : {
-        "blog": ".entry-title a",
-        "img": ".entry-content a img"
     }, 
     "http://benchblog.com/" : {
         "blog": ".entry-title a",
@@ -610,15 +582,6 @@
     "http://www.ticovogt.com/?cat=3" : {
         "blog": ".post .post-headline a",
         "img": ".post a img"
-    },
-    "http://www.jefflefkowitzchairmaker.com/chairmakers-journal/" : {
-        "blog": ".entry-header .entry-title a",
-        "append_custom_url_to_blog_url": "http://www.jefflefkowitzchairmaker.com",
-        "img": ".asdfasdfasdfasdfas"
-    },
-    "http://windsorchairsbydan.com/" : {
-        "blog": ".entry-title a",
-        "img": ".entry-content a img"
     },
     "http://wpatrickedwards.blogspot.ca/" : {
         "blog": ".entry-title a",
