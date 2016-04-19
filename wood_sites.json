@@ -79,7 +79,7 @@
         "blog": "#content .post h2 a",
         "img": ".entrytext a img"
     },
-    "http://mcglynnonmaking.com/": {
+    "https://mcglynnonmaking.com/": {
         "blog": ".entry-title a",
         "img": ".post .entry-content img"
     },
