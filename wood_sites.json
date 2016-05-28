@@ -655,8 +655,8 @@
         "blog": ".entry-title a",   
         "img": ".entry-content p img"
     },
-    "https://brianholcombewoodworkerblog.wordpress.com/" : {
-        "blog": ".post-title a",
+    "https://brianholcombewoodworker.com/" : {
+        "blog": ".widget_recent_entries li a",
         "img": ".post-entry img"
     },
     "https://roberthazelwoodwoodworking.wordpress.com/" : {
