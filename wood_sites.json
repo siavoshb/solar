@@ -366,10 +366,6 @@
         "blog": ".entry-title a",
         "img": ".entry-content p a img"
     },
-    "https://anthonyhaycabinetmaker.wordpress.com/": {
-        "blog": ".entry-title a",
-        "img": ".entry-content p a img"
-    },
     "http://www.eatoncountywoodworker.blogspot.com/" : {
         "blog": ".entry-title a",
         "img": ".post-body a img"
@@ -469,10 +465,6 @@
     "http://www.kapeldesigns.blogspot.com/" : {
         "blog": ".post-title a",
         "img": ".entry-content a img"    
-    },
-    "http://www.minimalistwoodworker.com/" : {
-        "blog": ".post-title a",
-        "img": ".image-block-wrapper img"    
     },
     "http://laborlimaetoolworks.blogspot.com/" : {
         "blog": ".post-title a",
