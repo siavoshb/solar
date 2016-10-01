@@ -695,5 +695,9 @@
     "https://brianholcombewoodworkerblog.wordpress.com/" : {
         "blog": ".post-title a",
         "img": ".post-entry img"
+    },
+    "https://langolodispogliainferiore.blogspot.it/" : {
+        "blog": ".post-title a",
+        "img": ".post-body img"
     }
 }
