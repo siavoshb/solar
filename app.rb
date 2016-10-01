@@ -87,6 +87,9 @@ get '/' do
     if (ShowImageTicker)
         H.page {
             H.p {
+		render_ads()
+	    } +
+            H.p {
                 render_gallery_for(news,10,'small')
             } +
             H.h2 {"Top news " + twitterbutton + facebookbutton}+news_list_to_html(news)
@@ -1771,6 +1774,25 @@ def news_list_to_html(news)
             order_num = order_num + 1
         }
         aux
+    }
+end
+
+def render_ads
+    H.section(:id => "sponsors") {
+	"
+	<div>
+		<div style='display: block;margin-bottom:15px;'>
+			<p>If you enjoy the site and have the means, please consider donating to help keep the site up. I'm looking to raise $100 ($70 raised so far) which will cover most of my 2016 server costs. Thank you! -Siavosh</p> 
+			<form action='https://www.paypal.com/cgi-bin/webscr' method='post' target='_top'>
+<input type='hidden' name='cmd' value='_s-xclick'>
+<input type='hidden' name='encrypted' value='-----BEGIN PKCS7-----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-----END PKCS7-----
+'>
+<input type='image' src='https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif' border='0' name='submit' alt='PayPal - The safer, easier way to pay online!'>
+<img alt='' border='0' src='https://www.paypalobjects.com/en_US/i/scr/pixel.gif' width='1' height='1'>
+</form>
+		</div>
+	</div>        
+	"	
     }
 end
 
