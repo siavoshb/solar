@@ -655,6 +655,10 @@
         "blog": ".widget_recent_entries li a",
         "img": ".post-entry img"
     },
+    "https://langolodispogliainferiore.blogspot.it/" : {
+        "blog": ".post-title a",
+        "img": ".post-body img"
+    },
     "https://roberthazelwoodwoodworking.wordpress.com/" : {
         "blog": ".entry-title a",
         "img": ".entry-content p img"
