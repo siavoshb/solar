@@ -23,10 +23,6 @@
         "blog": ".posttitle a",
         "img": ".content .entry img"
     },
-    "http://www.theunpluggedwoodshop.com/": {
-        "blog": ".entry-title a",
-        "img": ".post .entry-content img"
-    },
     "http://www.closegrain.com/": {
         "blog": ".post-title a",
         "img": ".post .entry-content img"
